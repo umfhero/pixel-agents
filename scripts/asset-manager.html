@@ -103,6 +103,7 @@
 
     .field-row { display: flex; gap: 8px; }
     .field-row .field { flex: 1; }
+    .field-hint { font-size: 9px; color: #888; margin-top: 3px; line-height: 1.3; }
 
     .checkbox-group { display: flex; flex-direction: column; gap: 6px; }
     .checkbox-item { display: flex; align-items: center; gap: 6px; }
@@ -297,6 +298,14 @@
         </div>
       </div>
 
+      <div class="field-row">
+        <div class="field">
+          <label class="field-label">Background Tiles</label>
+          <input id="f-bgtiles" type="number" min="0" max="10" title="Number of top rows that allow placement behind this furniture">
+          <div class="field-hint">Top rows where other items can be placed behind (shown <span style="color:#5dade2">blue</span> in preview)</div>
+        </div>
+      </div>
+
       <!-- Flags -->
       <div class="section-title">Flags</div>
       <div class="checkbox-group">
@@ -377,6 +386,7 @@ let filtered = []        // Indices into data.assets matching current filter
 let previewZoom = 4
 let savedSnapshot = null // Deep copy for Reset button
 let saveTimer = null     // Debounced localStorage save
+let jsonFileHandle = null // File System Access API handle for direct save
 
 // Add Asset mode
 let addMode = false
@@ -405,10 +415,32 @@ const previewCtx = previewCanvas.getContext('2d')
 // FILE LOADING
 // ════════════════════════════════════════════════════════════════════════
 
-document.getElementById('btn-load-json').onclick = () => document.getElementById('json-file').click()
+document.getElementById('btn-load-json').onclick = async () => {
+  // Try File System Access API first (Chromium) — gives us a handle for direct save-back
+  if (window.showOpenFilePicker) {
+    try {
+      const [handle] = await window.showOpenFilePicker({
+        types: [{ description: 'JSON', accept: { 'application/json': ['.json'] } }],
+        multiple: false,
+      })
+      const file = await handle.getFile()
+      const text = await file.text()
+      loadJsonData(JSON.parse(text))
+      jsonFileHandle = handle
+      statusMsg.textContent = '\u2713 Loaded ' + data.assets.length + ' assets from ' + file.name + ' (linked for direct save)'
+      return
+    } catch (err) {
+      if (err.name === 'AbortError') return // user cancelled
+      console.warn('File System Access API failed, falling back:', err)
+    }
+  }
+  // Fallback: classic file input
+  document.getElementById('json-file').click()
+}
 document.getElementById('json-file').onchange = (e) => {
   const file = e.target.files[0]
   if (!file) return
+  jsonFileHandle = null // no handle from classic file input
   const reader = new FileReader()
   reader.onload = (ev) => {
     try {
@@ -452,6 +484,18 @@ function loadJsonData(parsed) {
   renderPreview()
   updateCounts()
   scheduleSave()
+  updateExportButton()
+}
+
+function updateExportButton() {
+  const btn = document.getElementById('btn-export')
+  if (jsonFileHandle) {
+    btn.textContent = 'Save to ' + jsonFileHandle.name
+    btn.title = 'Write directly to ' + jsonFileHandle.name + ' (no download dialog)'
+  } else {
+    btn.textContent = 'Export'
+    btn.title = 'Download as tileset-metadata-final.json'
+  }
 }
 
 // Auto-load from localStorage
@@ -654,6 +698,7 @@ function loadForm(idx) {
   document.getElementById('f-category').value = a.category || 'misc'
   document.getElementById('f-fpw').value = a.footprintW || 1
   document.getElementById('f-fph').value = a.footprintH || 1
+  document.getElementById('f-bgtiles').value = a.backgroundTiles || 0
   document.getElementById('f-isdesk').checked = !!a.isDesk
   document.getElementById('f-color').checked = !!a.colorEditable
   document.getElementById('f-ontop').checked = !!a.canPlaceOnSurfaces
@@ -670,6 +715,13 @@ function updateRotationVisibility() {
 }
 
 document.getElementById('f-grouped').onchange = updateRotationVisibility
+
+// Footprint + background tiles live preview
+;['f-fpw', 'f-fph', 'f-bgtiles'].forEach(id => {
+  document.getElementById(id).oninput = () => {
+    renderPreview()
+  }
+})
 
 // ════════════════════════════════════════════════════════════════════════
 // GEOMETRY INPUTS (live preview)
@@ -725,6 +777,7 @@ document.getElementById('btn-save').onclick = () => {
   a.category = document.getElementById('f-category').value
   a.footprintW = +document.getElementById('f-fpw').value || a.footprintW
   a.footprintH = +document.getElementById('f-fph').value || a.footprintH
+  a.backgroundTiles = +document.getElementById('f-bgtiles').value || 0
   // Flags
   a.isDesk = document.getElementById('f-isdesk').checked
   a.colorEditable = document.getElementById('f-color').checked
@@ -751,7 +804,7 @@ document.getElementById('btn-reset').onclick = () => {
   statusMsg.textContent = 'Reset to last saved'
 }
 
-document.getElementById('btn-export').onclick = () => {
+document.getElementById('btn-export').onclick = async () => {
   if (!data) return
 
   // Include ALL assets (discarded ones keep discard:true so they can be recovered)
@@ -765,6 +818,23 @@ document.getElementById('btn-export').onclick = () => {
   }
 
   const json = JSON.stringify(output, null, 2)
+  const approved = data.assets.filter(x => !x.discard).length
+  const summary = approved + ' approved + ' + (data.assets.length - approved) + ' discarded assets'
+
+  // Try writing directly to the loaded file handle
+  if (jsonFileHandle) {
+    try {
+      const writable = await jsonFileHandle.createWritable()
+      await writable.write(json)
+      await writable.close()
+      statusMsg.textContent = '\u2713 Saved to ' + jsonFileHandle.name + ' \u2014 ' + summary
+      return
+    } catch (err) {
+      console.warn('Direct save failed, falling back to download:', err)
+    }
+  }
+
+  // Fallback: browser download
   const blob = new Blob([json], { type: 'application/json' })
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
@@ -773,8 +843,7 @@ document.getElementById('btn-export').onclick = () => {
   a.click()
   URL.revokeObjectURL(url)
 
-  const approved = data.assets.filter(x => !x.discard).length
-  statusMsg.textContent = '\u2713 Exported ' + approved + ' approved + ' + (data.assets.length - approved) + ' discarded assets'
+  statusMsg.textContent = '\u2713 Exported ' + summary
 }
 
 // ════════════════════════════════════════════════════════════════════════
@@ -852,6 +921,41 @@ function renderPreview() {
     previewCtx.fillStyle = 'rgba(255, 0, 0, 0.35)'
     for (const p of asset.erasedPixels) {
       previewCtx.fillRect(p.x * previewZoom, p.y * previewZoom, previewZoom, previewZoom)
+    }
+  }
+
+  // Footprint overlay — shows blocked rows (orange) vs background rows (blue)
+  const fpW = +document.getElementById('f-fpw').value || 0
+  const fpH = +document.getElementById('f-fph').value || 0
+  const bgTiles = +document.getElementById('f-bgtiles').value || 0
+  if (fpW > 0 && fpH > 0) {
+    const tileZoom = 16 * previewZoom
+    // Footprint is anchored to the bottom-left of the sprite
+    const fpStartY = h - fpH * tileZoom
+    for (let dr = 0; dr < fpH; dr++) {
+      const isBackground = dr < bgTiles
+      previewCtx.fillStyle = isBackground ? 'rgba(93, 173, 226, 0.3)' : 'rgba(230, 126, 34, 0.2)'
+      previewCtx.strokeStyle = isBackground ? 'rgba(93, 173, 226, 0.8)' : 'rgba(230, 126, 34, 0.6)'
+      previewCtx.lineWidth = 1
+      for (let dc = 0; dc < fpW; dc++) {
+        const tx = dc * tileZoom
+        const ty = fpStartY + dr * tileZoom
+        previewCtx.fillRect(tx, ty, tileZoom, tileZoom)
+        previewCtx.strokeRect(tx + 0.5, ty + 0.5, tileZoom - 1, tileZoom - 1)
+      }
+    }
+    // Labels
+    if (bgTiles > 0) {
+      previewCtx.font = `${Math.max(9, previewZoom * 3)}px sans-serif`
+      previewCtx.textAlign = 'center'
+      previewCtx.textBaseline = 'middle'
+      for (let dr = 0; dr < fpH; dr++) {
+        const isBackground = dr < bgTiles
+        const ty = fpStartY + dr * tileZoom + tileZoom / 2
+        const tx = fpW * tileZoom / 2
+        previewCtx.fillStyle = isBackground ? 'rgba(93, 173, 226, 0.9)' : 'rgba(230, 126, 34, 0.7)'
+        previewCtx.fillText(isBackground ? 'BG' : 'BLOCK', tx, ty)
+      }
     }
   }
 

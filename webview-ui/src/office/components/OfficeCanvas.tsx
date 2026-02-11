@@ -446,6 +446,7 @@ export function OfficeCanvas({ officeState, onHover, onClick, isEditMode, editor
               onDragMove(editorState.dragUid, ghostCol, ghostRow)
             }
           }
+          editorState.clearSelection()
         } else {
           // Click (no movement) — toggle selection
           if (editorState.selectedFurnitureUid === editorState.dragUid) {

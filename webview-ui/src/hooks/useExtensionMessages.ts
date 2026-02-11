@@ -29,6 +29,7 @@ export interface FurnitureAsset {
   partOfGroup?: boolean
   groupId?: string
   canPlaceOnSurfaces?: boolean
+  backgroundTiles?: number
 }
 
 export interface ExtensionMessageState {

@@ -120,6 +120,8 @@ export interface FurnitureCatalogEntry {
   sprite: SpriteData
   isDesk: boolean
   category?: string
+  /** Number of tile rows from the top of the footprint that are "background" (allow placement, still block walking). Default 0. */
+  backgroundTiles?: number
 }
 
 export interface PlacedFurniture {

@@ -1,6 +1,7 @@
 import { MAP_COLS, MAP_ROWS, TileType } from '../types.js'
 import type { TileType as TileTypeVal, OfficeLayout, PlacedFurniture, FloorColor } from '../types.js'
 import { getCatalogEntry, getRotatedType } from '../layout/furnitureCatalog.js'
+import { getPlacementBlockedTiles } from '../layout/layoutSerializer.js'
 
 /** Paint a single tile with pattern and color. Returns new layout (immutable). */
 export function paintTile(layout: OfficeLayout, col: number, row: number, tileType: TileTypeVal, color?: FloorColor): OfficeLayout {
@@ -78,21 +79,13 @@ export function canPlaceFurniture(
     return false
   }
 
-  // Build occupied set excluding the item being moved
-  const occupied = new Set<string>()
-  for (const f of layout.furniture) {
-    if (f.uid === excludeUid) continue
-    const e = getCatalogEntry(f.type)
-    if (!e) continue
-    for (let dr = 0; dr < e.footprintH; dr++) {
-      for (let dc = 0; dc < e.footprintW; dc++) {
-        occupied.add(`${f.col + dc},${f.row + dr}`)
-      }
-    }
-  }
+  // Build occupied set excluding the item being moved, skipping background tile rows
+  const occupied = getPlacementBlockedTiles(layout.furniture, excludeUid)
 
-  // Check overlap
+  // Check overlap — also skip the NEW item's own background rows
+  const newBgRows = entry.backgroundTiles || 0
   for (let dr = 0; dr < entry.footprintH; dr++) {
+    if (dr < newBgRows) continue // new item's background rows can overlap existing items
     for (let dc = 0; dc < entry.footprintW; dc++) {
       if (occupied.has(`${col + dc},${row + dr}`)) return false
     }

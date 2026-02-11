@@ -31,6 +31,7 @@ export interface LoadedAssetData {
     isDesk: boolean
     groupId?: string
     orientation?: string  // 'front' | 'back' | 'left' | 'right'
+    backgroundTiles?: number
   }>
   sprites: Record<string, SpriteData>
 }
@@ -116,6 +117,7 @@ export function buildDynamicCatalog(assets: LoadedAssetData): boolean {
       sprite,
       isDesk: asset.isDesk,
       category: asset.category as FurnitureCategory,
+      ...(asset.backgroundTiles ? { backgroundTiles: asset.backgroundTiles } : {}),
     }
   }).filter((e): e is CatalogEntryWithCategory => e !== null)
 

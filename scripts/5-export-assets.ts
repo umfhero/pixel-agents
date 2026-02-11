@@ -34,6 +34,7 @@ interface Asset {
   partOfGroup?: boolean
   groupId?: string | null
   orientation?: string
+  backgroundTiles?: number
 }
 
 interface CatalogEntry {
@@ -50,6 +51,7 @@ interface CatalogEntry {
   colorEditable: boolean
   groupId?: string
   orientation?: string
+  backgroundTiles?: number
 }
 
 const metadataPath = './scripts/.tileset-working/tileset-metadata-final.json'
@@ -176,6 +178,11 @@ for (const asset of assets) {
       footprintH: asset.footprintH,
       isDesk: asset.isDesk,
       colorEditable: asset.colorEditable,
+    }
+
+    // Background tiles
+    if (asset.backgroundTiles && asset.backgroundTiles > 0) {
+      entry.backgroundTiles = asset.backgroundTiles
     }
 
     // Rotation group: use explicit orientation if present, otherwise derive from name suffix

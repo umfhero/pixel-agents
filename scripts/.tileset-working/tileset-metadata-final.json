@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "timestamp": "2026-02-11T15:57:05.699Z",
+  "timestamp": "2026-02-11T17:04:50.423Z",
   "sourceFile": "assets/office_tileset_16x16.png",
   "tileset": {
     "width": 256,
@@ -21,7 +21,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": true,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_6",
@@ -36,12 +40,16 @@
       "footprintH": 2,
       "isDesk": true,
       "colorEditable": true,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_7",
       "paddedX": 80,
-      "paddedY": 22,
+      "paddedY": 23,
       "paddedWidth": 32,
       "paddedHeight": 32,
       "name": "COUNTER_WHITE_SM",
@@ -51,7 +59,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": true,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_10",
@@ -66,7 +78,11 @@
       "footprintH": 2,
       "isDesk": true,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_11",
@@ -81,7 +97,11 @@
       "footprintH": 2,
       "isDesk": true,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_15",
@@ -96,7 +116,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": true,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_17",
@@ -111,7 +135,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_18",
@@ -126,7 +154,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_25",
@@ -141,7 +173,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_23",
@@ -156,7 +192,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_24",
@@ -171,7 +211,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_26",
@@ -222,7 +266,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_27_B_A_B_A",
@@ -237,7 +285,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_27_B_A_B_B_A",
@@ -252,7 +304,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_27_B_A_B_B_B_A",
@@ -267,7 +323,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_27_B_B_0_0",
@@ -285,7 +345,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "DOOR_WOOD",
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_27_B_B_0_1",
@@ -303,7 +365,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "DOOR_WHITE",
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_27_B_B_0_2",
@@ -321,7 +385,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "DOOR_WOOD",
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_27_B_B_0_3",
@@ -339,7 +405,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "DOOR_WHITE",
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_28",
@@ -354,7 +422,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_29",
@@ -369,7 +441,11 @@
       "footprintH": 2,
       "isDesk": false,
       "colorEditable": false,
-      "discard": false
+      "discard": false,
+      "backgroundTiles": 1,
+      "canPlaceOnSurfaces": false,
+      "partOfGroup": false,
+      "groupId": null
     },
     {
       "id": "ASSET_30",
@@ -549,7 +625,8 @@
       "discard": false,
       "partOfGroup": false,
       "groupId": null,
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_41_0_1",
@@ -567,7 +644,8 @@
       "discard": false,
       "partOfGroup": false,
       "groupId": null,
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_40",
@@ -585,7 +663,8 @@
       "discard": false,
       "partOfGroup": false,
       "groupId": null,
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_44",
@@ -981,7 +1060,8 @@
       "discard": false,
       "partOfGroup": false,
       "groupId": null,
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_55",
@@ -999,7 +1079,8 @@
       "discard": false,
       "partOfGroup": false,
       "groupId": null,
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_61",
@@ -1341,7 +1422,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "FULL_COMPUTER_COFFE",
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_92",
@@ -1359,7 +1442,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "FULL_COMPUTER_COFFE",
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_94",
@@ -1377,7 +1462,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "FULL_COMPUTER",
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_95",
@@ -1395,7 +1482,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "FULL_COMPUTER",
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_98",
@@ -2199,7 +2288,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_99",
@@ -2527,7 +2618,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_100",
@@ -2653,7 +2746,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_108",
@@ -2697,7 +2792,9 @@
       "discard": false,
       "partOfGroup": true,
       "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true
+      "canPlaceOnSurfaces": true,
+      "backgroundTiles": 1,
+      "orientation": "front"
     },
     {
       "id": "ASSET_110",
@@ -3482,7 +3579,8 @@
       "discard": false,
       "partOfGroup": false,
       "groupId": null,
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_135",
@@ -3500,7 +3598,8 @@
       "discard": false,
       "partOfGroup": false,
       "groupId": null,
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_136",
@@ -3780,7 +3879,8 @@
       "discard": false,
       "partOfGroup": false,
       "groupId": null,
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": false,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_132",
@@ -3960,7 +4060,8 @@
       "discard": false,
       "canPlaceOnSurfaces": false,
       "partOfGroup": false,
-      "groupId": null
+      "groupId": null,
+      "backgroundTiles": 1
     },
     {
       "id": "ASSET_NEW_107",
@@ -3978,7 +4079,8 @@
       "discard": false,
       "canPlaceOnSurfaces": false,
       "partOfGroup": false,
-      "groupId": null
+      "groupId": null,
+      "backgroundTiles": 1
     }
   ]
 }
