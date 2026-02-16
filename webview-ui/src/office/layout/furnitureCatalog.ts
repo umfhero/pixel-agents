@@ -91,8 +91,11 @@ interface RotationGroup {
 const rotationGroups = new Map<string, RotationGroup>()
 
 // ── State groups ────────────────────────────────────────────────
-// Maps asset ID → its on/off counterpart
+// Maps asset ID → its on/off counterpart (symmetric for toggle)
 const stateGroups = new Map<string, string>()
+// Directional maps for getOnStateType / getOffStateType
+const offToOn = new Map<string, string>()  // off asset → on asset
+const onToOff = new Map<string, string>()  // on asset → off asset
 
 // Internal catalog (includes all variants for getCatalogEntry lookups)
 let internalCatalog: CatalogEntryWithCategory[] | null = null
@@ -137,6 +140,8 @@ export function buildDynamicCatalog(assets: LoadedAssetData): boolean {
   // Build rotation groups from groupId + orientation metadata
   rotationGroups.clear()
   stateGroups.clear()
+  offToOn.clear()
+  onToOff.clear()
 
   // Phase 1: Collect orientations per group (only "off" or stateless variants for rotation)
   const groupMap = new Map<string, Map<string, string>>() // groupId → (orientation → assetId)
@@ -194,6 +199,8 @@ export function buildDynamicCatalog(assets: LoadedAssetData): boolean {
     if (onId && offId) {
       stateGroups.set(onId, offId)
       stateGroups.set(offId, onId)
+      offToOn.set(offId, onId)
+      onToOff.set(onId, offId)
     }
   }
 
@@ -310,21 +317,12 @@ export function getToggledType(currentType: string): string | null {
 
 /** Returns the "on" variant if this type has one, otherwise returns the type unchanged. */
 export function getOnStateType(currentType: string): string {
-  const toggled = stateGroups.get(currentType)
-  if (!toggled) return currentType
-  // Determine if current is "off" by checking if toggled is the "on" variant
-  // We need to check the catalog data — but since stateGroups is symmetric (on→off, off→on),
-  // we check the name convention: "on" types end with _ON
-  if (currentType.endsWith('_OFF') || currentType.endsWith('_off')) return toggled
-  return currentType // already on (or has no convention — return as-is)
+  return offToOn.get(currentType) ?? currentType
 }
 
 /** Returns the "off" variant if this type has one, otherwise returns the type unchanged. */
 export function getOffStateType(currentType: string): string {
-  const toggled = stateGroups.get(currentType)
-  if (!toggled) return currentType
-  if (currentType.endsWith('_ON') || currentType.endsWith('_on')) return toggled
-  return currentType // already off
+  return onToOff.get(currentType) ?? currentType
 }
 
 /** Returns true if the given furniture type is part of a rotation group. */
