@@ -42,6 +42,7 @@ export function createCharacter(
   palette: number,
   seatId: string | null,
   seat: Seat | null,
+  hueShift = 0,
 ): Character {
   const col = seat ? seat.seatCol : 1
   const row = seat ? seat.seatRow : 1
@@ -58,6 +59,7 @@ export function createCharacter(
     moveProgress: 0,
     currentTool: null,
     palette,
+    hueShift,
     frame: 0,
     frameTimer: 0,
     wanderTimer: 0,

@@ -132,7 +132,7 @@ function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
  * B slider (-100 to 100): shifts lightness
  * C slider (-100 to 100): adjusts contrast around midpoint
  */
-function adjustSprite(sprite: SpriteData, color: FloorColor): SpriteData {
+export function adjustSprite(sprite: SpriteData, color: FloorColor): SpriteData {
   const { h: hShift, s: sShift, b, c } = color
   const result: SpriteData = []
 

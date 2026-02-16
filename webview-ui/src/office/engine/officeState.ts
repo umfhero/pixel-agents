@@ -27,7 +27,6 @@ export class OfficeState {
   /** Reverse lookup: sub-agent character ID → parent info */
   subagentMeta: Map<number, { parentAgentId: number; parentToolId: string }> = new Map()
   private nextSubagentId = -1
-  private nextPalette = 0
 
   constructor(layout?: OfficeLayout) {
     this.layout = layout || createDefaultLayout()
@@ -117,11 +116,46 @@ export class OfficeState {
     return null
   }
 
-  addAgent(id: number, preferredPalette?: number, preferredSeatId?: string): void {
+  /**
+   * Pick a diverse palette for a new agent based on currently active agents.
+   * First 6 agents each get a unique skin (random order). Beyond 6, skins
+   * repeat in balanced rounds with a random hue shift (≥45°).
+   */
+  private pickDiversePalette(): { palette: number; hueShift: number } {
+    // Count how many non-sub-agents use each base palette (0-5)
+    const counts = [0, 0, 0, 0, 0, 0]
+    for (const ch of this.characters.values()) {
+      if (ch.isSubagent) continue
+      counts[ch.palette]++
+    }
+    const minCount = Math.min(...counts)
+    // Available = palettes at the minimum count (least used)
+    const available: number[] = []
+    for (let i = 0; i < 6; i++) {
+      if (counts[i] === minCount) available.push(i)
+    }
+    const palette = available[Math.floor(Math.random() * available.length)]
+    // First round (minCount === 0): no hue shift. Subsequent rounds: random ≥45°.
+    let hueShift = 0
+    if (minCount > 0) {
+      hueShift = 45 + Math.floor(Math.random() * 271) // 45–315
+    }
+    return { palette, hueShift }
+  }
+
+  addAgent(id: number, preferredPalette?: number, preferredHueShift?: number, preferredSeatId?: string): void {
     if (this.characters.has(id)) return
 
-    const palette = preferredPalette ?? (this.nextPalette % 6)
-    this.nextPalette = Math.max(this.nextPalette, palette + 1)
+    let palette: number
+    let hueShift: number
+    if (preferredPalette !== undefined) {
+      palette = preferredPalette
+      hueShift = preferredHueShift ?? 0
+    } else {
+      const pick = this.pickDiversePalette()
+      palette = pick.palette
+      hueShift = pick.hueShift
+    }
 
     // Try preferred seat first, then any free seat
     let seatId: string | null = null
@@ -138,14 +172,14 @@ export class OfficeState {
     if (seatId) {
       const seat = this.seats.get(seatId)!
       seat.assigned = true
-      const ch = createCharacter(id, palette, seatId, seat)
+      const ch = createCharacter(id, palette, seatId, seat, hueShift)
       this.characters.set(id, ch)
     } else {
       // No seats — spawn at random walkable tile
       const spawn = this.walkableTiles.length > 0
         ? this.walkableTiles[Math.floor(Math.random() * this.walkableTiles.length)]
         : { col: 1, row: 1 }
-      const ch = createCharacter(id, palette, null, null)
+      const ch = createCharacter(id, palette, null, null, hueShift)
       ch.x = spawn.col * TILE_SIZE + TILE_SIZE / 2
       ch.y = spawn.row * TILE_SIZE + TILE_SIZE / 2
       ch.tileCol = spawn.col
@@ -244,6 +278,7 @@ export class OfficeState {
     const id = this.nextSubagentId--
     const parentCh = this.characters.get(parentAgentId)
     const palette = parentCh ? parentCh.palette : 0
+    const hueShift = parentCh ? parentCh.hueShift : 0
 
     // Find a free seat
     let seatId: string | null = null
@@ -257,7 +292,7 @@ export class OfficeState {
     if (seatId) {
       const seat = this.seats.get(seatId)!
       seat.assigned = true
-      const ch = createCharacter(id, palette, seatId, seat)
+      const ch = createCharacter(id, palette, seatId, seat, hueShift)
       ch.isSubagent = true
       ch.parentAgentId = parentAgentId
       this.characters.set(id, ch)
@@ -266,7 +301,7 @@ export class OfficeState {
       const spawn = this.walkableTiles.length > 0
         ? this.walkableTiles[Math.floor(Math.random() * this.walkableTiles.length)]
         : { col: 1, row: 1 }
-      const ch = createCharacter(id, palette, null, null)
+      const ch = createCharacter(id, palette, null, null, hueShift)
       ch.isSubagent = true
       ch.parentAgentId = parentAgentId
       ch.x = spawn.col * TILE_SIZE + TILE_SIZE / 2

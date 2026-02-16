@@ -1,5 +1,6 @@
-import type { Direction, SpriteData } from '../types.js'
+import type { Direction, SpriteData, FloorColor } from '../types.js'
 import { Direction as Dir } from '../types.js'
+import { adjustSprite } from '../colorize.js'
 
 // ── Color Palettes ──────────────────────────────────────────────
 const _ = '' // transparent
@@ -1016,10 +1017,41 @@ export interface CharacterSprites {
   reading: Record<Direction, [SpriteData, SpriteData]>
 }
 
-const spriteCache = new Map<number, CharacterSprites>()
+const spriteCache = new Map<string, CharacterSprites>()
 
-export function getCharacterSprites(paletteIndex: number): CharacterSprites {
-  const cached = spriteCache.get(paletteIndex)
+/** Apply hue shift to every sprite in a CharacterSprites set */
+function hueShiftSprites(sprites: CharacterSprites, hueShift: number): CharacterSprites {
+  const color: FloorColor = { h: hueShift, s: 0, b: 0, c: 0 }
+  const shift = (s: SpriteData) => adjustSprite(s, color)
+  const shiftWalk = (arr: [SpriteData, SpriteData, SpriteData, SpriteData]): [SpriteData, SpriteData, SpriteData, SpriteData] =>
+    [shift(arr[0]), shift(arr[1]), shift(arr[2]), shift(arr[3])]
+  const shiftPair = (arr: [SpriteData, SpriteData]): [SpriteData, SpriteData] =>
+    [shift(arr[0]), shift(arr[1])]
+  return {
+    walk: {
+      [Dir.DOWN]: shiftWalk(sprites.walk[Dir.DOWN]),
+      [Dir.UP]: shiftWalk(sprites.walk[Dir.UP]),
+      [Dir.RIGHT]: shiftWalk(sprites.walk[Dir.RIGHT]),
+      [Dir.LEFT]: shiftWalk(sprites.walk[Dir.LEFT]),
+    } as Record<Direction, [SpriteData, SpriteData, SpriteData, SpriteData]>,
+    typing: {
+      [Dir.DOWN]: shiftPair(sprites.typing[Dir.DOWN]),
+      [Dir.UP]: shiftPair(sprites.typing[Dir.UP]),
+      [Dir.RIGHT]: shiftPair(sprites.typing[Dir.RIGHT]),
+      [Dir.LEFT]: shiftPair(sprites.typing[Dir.LEFT]),
+    } as Record<Direction, [SpriteData, SpriteData]>,
+    reading: {
+      [Dir.DOWN]: shiftPair(sprites.reading[Dir.DOWN]),
+      [Dir.UP]: shiftPair(sprites.reading[Dir.UP]),
+      [Dir.RIGHT]: shiftPair(sprites.reading[Dir.RIGHT]),
+      [Dir.LEFT]: shiftPair(sprites.reading[Dir.LEFT]),
+    } as Record<Direction, [SpriteData, SpriteData]>,
+  }
+}
+
+export function getCharacterSprites(paletteIndex: number, hueShift = 0): CharacterSprites {
+  const cacheKey = `${paletteIndex}:${hueShift}`
+  const cached = spriteCache.get(cacheKey)
   if (cached) return cached
 
   let sprites: CharacterSprites
@@ -1080,6 +1112,11 @@ export function getCharacterSprites(paletteIndex: number): CharacterSprites {
     }
   }
 
-  spriteCache.set(paletteIndex, sprites)
+  // Apply hue shift if non-zero
+  if (hueShift !== 0) {
+    sprites = hueShiftSprites(sprites, hueShift)
+  }
+
+  spriteCache.set(cacheKey, sprites)
   return sprites
 }
