@@ -42,6 +42,19 @@ export function layoutToFurnitureInstances(furniture: PlacedFurniture[]): Furnit
     const spriteH = entry.sprite.length
     let zY = y + spriteH
 
+    // Chair z-sorting: ensure characters sitting on chairs render correctly
+    if (entry.category === 'chairs') {
+      if (entry.orientation === 'back') {
+        // Back-facing chairs render IN FRONT of the seated character
+        // (the chair back visually occludes the character behind it)
+        zY = (item.row + 1) * TILE_SIZE + 1
+      } else {
+        // All other chairs: cap zY to first row bottom so characters
+        // at any seat tile render in front of the chair
+        zY = (item.row + 1) * TILE_SIZE
+      }
+    }
+
     // Surface items render in front of the desk they sit on
     if (entry.canPlaceOnSurfaces) {
       for (let dr = 0; dr < entry.footprintH; dr++) {
@@ -99,7 +112,19 @@ export function getPlacementBlockedTiles(furniture: PlacedFurniture[], excludeUi
   return tiles
 }
 
-/** Generate seats from chair furniture placed adjacent to desks */
+/** Map chair orientation to character facing direction */
+function orientationToFacing(orientation: string): Direction {
+  switch (orientation) {
+    case 'front': return Direction.DOWN
+    case 'back': return Direction.UP
+    case 'left': return Direction.LEFT
+    case 'right': return Direction.RIGHT
+    default: return Direction.DOWN
+  }
+}
+
+/** Generate seats from chair furniture.
+ *  Facing priority: 1) chair orientation, 2) adjacent desk, 3) forward (DOWN). */
 export function layoutToSeats(furniture: PlacedFurniture[]): Map<string, Seat> {
   const seats = new Map<string, Seat>()
 
@@ -122,32 +147,44 @@ export function layoutToSeats(furniture: PlacedFurniture[]): Map<string, Seat> {
     { dc: 1, dr: 0, facing: Direction.RIGHT },   // desk is right of chair → face RIGHT
   ]
 
-  // For each chair furniture, check adjacency to desks
+  // For each chair, every footprint tile becomes a seat.
+  // Multi-tile chairs (e.g. 2-tile couches) produce multiple seats.
   for (const item of furniture) {
     const entry = getCatalogEntry(item.type)
     if (!entry || entry.category !== 'chairs') continue
 
-    let found = false
-    // Iterate all footprint tiles of this chair
-    for (let dr = 0; dr < entry.footprintH && !found; dr++) {
-      for (let dc = 0; dc < entry.footprintW && !found; dc++) {
+    let seatCount = 0
+    for (let dr = 0; dr < entry.footprintH; dr++) {
+      for (let dc = 0; dc < entry.footprintW; dc++) {
         const tileCol = item.col + dc
         const tileRow = item.row + dr
-        // Check 4 cardinal neighbors for desk tiles
-        for (const d of dirs) {
-          const neighborKey = `${tileCol + d.dc},${tileRow + d.dr}`
-          if (deskTiles.has(neighborKey)) {
-            seats.set(item.uid, {
-              uid: item.uid,
-              seatCol: tileCol,
-              seatRow: tileRow,
-              facingDir: d.facing,
-              assigned: false,
-            })
-            found = true
-            break
+
+        // Determine facing direction:
+        // 1) Chair orientation takes priority
+        // 2) Adjacent desk direction
+        // 3) Default forward (DOWN)
+        let facingDir: Direction = Direction.DOWN
+        if (entry.orientation) {
+          facingDir = orientationToFacing(entry.orientation)
+        } else {
+          for (const d of dirs) {
+            if (deskTiles.has(`${tileCol + d.dc},${tileRow + d.dr}`)) {
+              facingDir = d.facing
+              break
+            }
           }
         }
+
+        // First seat uses chair uid (backward compat), subsequent use uid:N
+        const seatUid = seatCount === 0 ? item.uid : `${item.uid}:${seatCount}`
+        seats.set(seatUid, {
+          uid: seatUid,
+          seatCol: tileCol,
+          seatRow: tileRow,
+          facingDir,
+          assigned: false,
+        })
+        seatCount++
       }
     }
   }
