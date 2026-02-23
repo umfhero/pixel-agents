@@ -205,18 +205,16 @@ export function getSeatTiles(seats: Map<string, Seat>): Set<string> {
 }
 
 /** Default floor colors for the two rooms */
-const DEFAULT_LEFT_ROOM_COLOR: FloorColor = { h: 35, s: 30, b: 15, c: 0 }  // warm beige
-const DEFAULT_RIGHT_ROOM_COLOR: FloorColor = { h: 25, s: 45, b: 5, c: 10 }  // warm brown
-const DEFAULT_CARPET_COLOR: FloorColor = { h: 280, s: 40, b: -5, c: 0 }     // purple
-const DEFAULT_DOORWAY_COLOR: FloorColor = { h: 35, s: 25, b: 10, c: 0 }     // tan
+/** Default floor colors for the overall modern office */
+const DEFAULT_LEFT_ROOM_COLOR: FloorColor = { h: 215, s: 15, b: -10, c: -5 }     // slate gray/blue carpet
+const DEFAULT_RIGHT_ROOM_COLOR: FloorColor = { h: 215, s: 15, b: -10, c: -5 }    // slate gray/blue carpet
+const DEFAULT_CARPET_COLOR: FloorColor = { h: 215, s: 15, b: -5, c: -5 }         // slightly lighter area
+const DEFAULT_DOORWAY_COLOR: FloorColor = { h: 215, s: 15, b: -10, c: -5 }       // slate gray/blue carpet
 
 /** Create the default office layout matching the current hardcoded office */
 export function createDefaultLayout(): OfficeLayout {
   const W = TileType.WALL
-  const F1 = TileType.FLOOR_1
-  const F2 = TileType.FLOOR_2
   const F3 = TileType.FLOOR_3
-  const F4 = TileType.FLOOR_4
 
   const tiles: TileTypeVal[] = []
   const tileColors: Array<FloorColor | null> = []
@@ -225,30 +223,19 @@ export function createDefaultLayout(): OfficeLayout {
     for (let c = 0; c < DEFAULT_COLS; c++) {
       if (r === 0 || r === DEFAULT_ROWS - 1) { tiles.push(W); tileColors.push(null); continue }
       if (c === 0 || c === DEFAULT_COLS - 1) { tiles.push(W); tileColors.push(null); continue }
-      if (c === 10) {
-        if (r >= 4 && r <= 6) {
-          tiles.push(F4); tileColors.push(DEFAULT_DOORWAY_COLOR)
-        } else {
-          tiles.push(W); tileColors.push(null)
-        }
-        continue
+      if (c === 10 && !(r >= 4 && r <= 6)) {
+        tiles.push(W); tileColors.push(null); continue
       }
-      if (c >= 15 && c <= 18 && r >= 7 && r <= 9) {
-        tiles.push(F3); tileColors.push(DEFAULT_CARPET_COLOR); continue
-      }
-      if (c < 10) {
-        tiles.push(F1); tileColors.push(DEFAULT_LEFT_ROOM_COLOR)
-      } else {
-        tiles.push(F2); tileColors.push(DEFAULT_RIGHT_ROOM_COLOR)
-      }
+      // Everything else is uniform office carpet (F3 is a soft noise texture)
+      tiles.push(F3); tileColors.push(DEFAULT_CARPET_COLOR)
     }
   }
 
   const furniture: PlacedFurniture[] = [
     { uid: 'desk-left', type: FurnitureType.DESK, col: 4, row: 3 },
     { uid: 'desk-right', type: FurnitureType.DESK, col: 13, row: 3 },
-    { uid: 'pc-left', type: FurnitureType.PC, col: 4, row: 3 },
-    { uid: 'pc-right', type: FurnitureType.PC, col: 14, row: 3 },
+    { uid: 'pc-left', type: 'pc_back', col: 4, row: 3 },
+    { uid: 'pc-right', type: FurnitureType.PC, col: 14, row: 4 },
     { uid: 'bookshelf-1', type: FurnitureType.BOOKSHELF, col: 1, row: 5 },
     { uid: 'plant-left', type: FurnitureType.PLANT, col: 1, row: 1 },
     { uid: 'cooler-1', type: FurnitureType.COOLER, col: 17, row: 7 },

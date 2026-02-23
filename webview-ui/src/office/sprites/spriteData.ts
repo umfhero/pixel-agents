@@ -220,11 +220,8 @@ export const CHAIR_SPRITE: SpriteData = (() => {
 })()
 
 /** PC monitor: 16x16 — top-down monitor on stand */
-export const PC_SPRITE: SpriteData = (() => {
-  const F = '#555555'
-  const S = '#3A3A5C'
-  const B = '#6688CC'
-  const D = '#444444'
+export const PC_FRONT_SPRITE: SpriteData = (() => {
+  const F = '#555555'; const S = '#3A3A5C'; const B = '#6688CC'; const D = '#444444';
   return [
     [_, _, _, F, F, F, F, F, F, F, F, F, F, _, _, _],
     [_, _, _, F, S, S, S, S, S, S, S, S, F, _, _, _],
@@ -243,7 +240,70 @@ export const PC_SPRITE: SpriteData = (() => {
     [_, _, _, _, _, D, D, D, D, D, D, _, _, _, _, _],
     [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
   ]
-})()
+})();
+export const PC_LEFT_SPRITE: SpriteData = (() => {
+  const F = '#555555'; const S = '#3A3A5C'; const B = '#6688CC'; const D = '#444444';
+  return [
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, F, F, F, F, F, F, F, F, F, F],
+    [_, _, _, _, _, _, F, S, S, S, S, S, S, S, S, F],
+    [_, D, D, _, _, _, F, S, B, B, B, B, B, B, S, F],
+    [_, D, D, D, _, _, F, S, B, B, B, B, B, B, S, F],
+    [_, D, D, D, D, D, F, S, B, B, B, B, B, B, S, F],
+    [_, D, D, D, D, D, F, S, B, B, B, B, B, B, S, F],
+    [_, D, D, D, _, _, F, S, B, B, B, B, B, B, S, F],
+    [_, D, D, _, _, _, F, S, B, B, B, B, B, B, S, F],
+    [_, _, _, _, _, _, F, S, S, S, S, S, S, S, S, F],
+    [_, _, _, _, _, _, F, F, F, F, F, F, F, F, F, F],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+  ]
+})();
+export const PC_BACK_SPRITE: SpriteData = (() => {
+  const F = '#555555'; const S = '#3A3A5C'; const B = '#6688CC'; const D = '#444444';
+  return [
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, D, D, D, D, D, D, _, _, _, _, _],
+    [_, _, _, _, _, D, D, D, D, D, D, _, _, _, _, _],
+    [_, _, _, _, _, _, D, D, D, D, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, D, D, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, D, D, _, _, _, _, _, _, _],
+    [_, _, _, F, F, F, F, F, F, F, F, F, F, _, _, _],
+    [_, _, _, F, S, S, S, S, S, S, S, S, F, _, _, _],
+    [_, _, _, F, S, B, B, B, B, B, B, S, F, _, _, _],
+    [_, _, _, F, S, B, B, B, B, B, B, S, F, _, _, _],
+    [_, _, _, F, S, B, B, B, B, B, B, S, F, _, _, _],
+    [_, _, _, F, S, B, B, B, B, B, B, S, F, _, _, _],
+    [_, _, _, F, S, B, B, B, B, B, B, S, F, _, _, _],
+    [_, _, _, F, S, B, B, B, B, B, B, S, F, _, _, _],
+    [_, _, _, F, S, S, S, S, S, S, S, S, F, _, _, _],
+    [_, _, _, F, F, F, F, F, F, F, F, F, F, _, _, _],
+  ]
+})();
+export const PC_RIGHT_SPRITE: SpriteData = (() => {
+  const F = '#555555'; const S = '#3A3A5C'; const B = '#6688CC'; const D = '#444444';
+  return [
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [F, F, F, F, F, F, F, F, F, F, _, _, _, _, _, _],
+    [F, S, S, S, S, S, S, S, S, F, _, _, _, _, _, _],
+    [F, S, B, B, B, B, B, B, S, F, _, _, _, D, D, _],
+    [F, S, B, B, B, B, B, B, S, F, _, _, D, D, D, _],
+    [F, S, B, B, B, B, B, B, S, F, D, D, D, D, D, _],
+    [F, S, B, B, B, B, B, B, S, F, D, D, D, D, D, _],
+    [F, S, B, B, B, B, B, B, S, F, _, _, D, D, D, _],
+    [F, S, B, B, B, B, B, B, S, F, _, _, _, D, D, _],
+    [F, S, S, S, S, S, S, S, S, F, _, _, _, _, _, _],
+    [F, F, F, F, F, F, F, F, F, F, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+    [_, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _],
+  ]
+})();
 
 /** Desk lamp: 16x16 — top-down lamp with light cone */
 export const LAMP_SPRITE: SpriteData = (() => {

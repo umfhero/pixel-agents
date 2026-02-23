@@ -7,7 +7,10 @@ import {
   COOLER_SPRITE,
   WHITEBOARD_SPRITE,
   CHAIR_SPRITE,
-  PC_SPRITE,
+  PC_FRONT_SPRITE,
+  PC_LEFT_SPRITE,
+  PC_BACK_SPRITE,
+  PC_RIGHT_SPRITE,
   LAMP_SPRITE,
 } from '../sprites/spriteData.js'
 
@@ -39,14 +42,17 @@ export interface CatalogEntryWithCategory extends FurnitureCatalogEntry {
 
 export const FURNITURE_CATALOG: CatalogEntryWithCategory[] = [
   // ── Original hand-drawn sprites ──
-  { type: FurnitureType.DESK,       label: 'Desk',       footprintW: 2, footprintH: 2, sprite: DESK_SQUARE_SPRITE,  isDesk: true,  category: 'desks' },
-  { type: FurnitureType.BOOKSHELF,  label: 'Bookshelf',  footprintW: 1, footprintH: 2, sprite: BOOKSHELF_SPRITE,    isDesk: false, category: 'storage' },
-  { type: FurnitureType.PLANT,      label: 'Plant',      footprintW: 1, footprintH: 1, sprite: PLANT_SPRITE,        isDesk: false, category: 'decor' },
-  { type: FurnitureType.COOLER,     label: 'Cooler',     footprintW: 1, footprintH: 1, sprite: COOLER_SPRITE,       isDesk: false, category: 'misc' },
-  { type: FurnitureType.WHITEBOARD, label: 'Whiteboard', footprintW: 2, footprintH: 1, sprite: WHITEBOARD_SPRITE,   isDesk: false, category: 'decor' },
-  { type: FurnitureType.CHAIR,      label: 'Chair',      footprintW: 1, footprintH: 1, sprite: CHAIR_SPRITE,        isDesk: false, category: 'chairs' },
-  { type: FurnitureType.PC,         label: 'PC',         footprintW: 1, footprintH: 1, sprite: PC_SPRITE,           isDesk: false, category: 'electronics' },
-  { type: FurnitureType.LAMP,       label: 'Lamp',       footprintW: 1, footprintH: 1, sprite: LAMP_SPRITE,         isDesk: false, category: 'decor' },
+  { type: FurnitureType.DESK, label: 'Desk', footprintW: 2, footprintH: 2, sprite: DESK_SQUARE_SPRITE, isDesk: true, category: 'desks' },
+  { type: FurnitureType.BOOKSHELF, label: 'Bookshelf', footprintW: 1, footprintH: 2, sprite: BOOKSHELF_SPRITE, isDesk: false, category: 'storage' },
+  { type: FurnitureType.PLANT, label: 'Plant', footprintW: 1, footprintH: 1, sprite: PLANT_SPRITE, isDesk: false, category: 'decor' },
+  { type: FurnitureType.COOLER, label: 'Cooler', footprintW: 1, footprintH: 1, sprite: COOLER_SPRITE, isDesk: false, category: 'misc' },
+  { type: FurnitureType.WHITEBOARD, label: 'Whiteboard', footprintW: 2, footprintH: 1, sprite: WHITEBOARD_SPRITE, isDesk: false, category: 'decor' },
+  { type: FurnitureType.CHAIR, label: 'Chair', footprintW: 1, footprintH: 1, sprite: CHAIR_SPRITE, isDesk: false, category: 'chairs' },
+  { type: FurnitureType.PC, label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_FRONT_SPRITE, isDesk: false, category: 'electronics', orientation: 'front', canPlaceOnSurfaces: true },
+  { type: 'pc_right', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_RIGHT_SPRITE, isDesk: false, category: 'electronics', orientation: 'right', canPlaceOnSurfaces: true },
+  { type: 'pc_back', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_BACK_SPRITE, isDesk: false, category: 'electronics', orientation: 'back', canPlaceOnSurfaces: true },
+  { type: 'pc_left', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_LEFT_SPRITE, isDesk: false, category: 'electronics', orientation: 'left', canPlaceOnSurfaces: true },
+  { type: FurnitureType.LAMP, label: 'Lamp', footprintW: 1, footprintH: 1, sprite: LAMP_SPRITE, isDesk: false, category: 'decor' },
 
 ]
 
@@ -61,6 +67,16 @@ interface RotationGroup {
 
 // Maps any member asset ID → its rotation group
 const rotationGroups = new Map<string, RotationGroup>()
+
+// Register the hardcoded PC rotation group right away
+const pcGroup: RotationGroup = {
+  orientations: ['front', 'right', 'back', 'left'],
+  members: { front: FurnitureType.PC, right: 'pc_right', back: 'pc_back', left: 'pc_left' }
+}
+rotationGroups.set(FurnitureType.PC, pcGroup)
+rotationGroups.set('pc_right', pcGroup)
+rotationGroups.set('pc_back', pcGroup)
+rotationGroups.set('pc_left', pcGroup)
 
 // ── State groups ────────────────────────────────────────────────
 // Maps asset ID → its on/off counterpart (symmetric for toggle)
