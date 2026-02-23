@@ -136,6 +136,21 @@ export function SettingsModal({ isOpen, onClose, isDebugMode, onToggleDebugMode 
         </button>
         <button
           onClick={() => {
+            vscode.postMessage({ type: 'resetToDefaultLayout' })
+            onClose()
+          }}
+          onMouseEnter={() => setHovered('resetDefault')}
+          onMouseLeave={() => setHovered(null)}
+          style={{
+            ...menuItemBase,
+            background: hovered === 'resetDefault' ? 'rgba(255, 255, 255, 0.08)' : 'transparent',
+            color: 'var(--pixel-danger-text, #ff6b6b)',
+          }}
+        >
+          Factory Reset Layout
+        </button>
+        <button
+          onClick={() => {
             const newVal = !isSoundEnabled()
             setSoundEnabled(newVal)
             setSoundLocal(newVal)

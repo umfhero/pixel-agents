@@ -1,4 +1,4 @@
-export { createCharacter, updateCharacter, getCharacterSprite, isReadingTool } from './characters.js'
+export { createCharacter, updateCharacter, getCharacterSprite } from './characters.js'
 export { OfficeState } from './officeState.js'
 export { startGameLoop } from './gameLoop.js'
 export type { GameLoopCallbacks } from './gameLoop.js'

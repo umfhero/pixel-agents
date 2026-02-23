@@ -59,7 +59,14 @@ export function restoreAgents(
 	doPersist: () => void,
 ): void {
 	const persisted = context.workspaceState.get<PersistedAgent[]>(WORKSPACE_KEY_AGENTS, []);
-	if (persisted.length === 0) return;
+	if (persisted.length === 0) {
+		// Spawn a default agent on first launch so the office isn't empty!
+		const id = nextAgentIdRef.current++;
+		agents.set(id, { id, activityState: 'idle', lastActivityMs: Date.now() });
+		activeAgentIdRef.current = id;
+		doPersist();
+		return;
+	}
 
 	let maxId = 0;
 

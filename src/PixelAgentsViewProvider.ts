@@ -167,6 +167,15 @@ export class PixelAgentsViewProvider implements vscode.WebviewViewProvider {
 				} catch {
 					vscode.window.showErrorMessage('Pixel Agents: Failed to read or parse layout file.');
 				}
+			} else if (message.type === 'resetToDefaultLayout') {
+				if (this.defaultLayout) {
+					this.layoutWatcher?.markOwnWrite();
+					writeLayoutToFile(this.defaultLayout);
+					this.webview?.postMessage({ type: 'layoutLoaded', layout: this.defaultLayout });
+					vscode.window.showInformationMessage('Pixel Agents: Layout reset to default.');
+				} else {
+					vscode.window.showErrorMessage('Pixel Agents: Default layout not available.');
+				}
 			}
 		});
 	}
