@@ -81,7 +81,7 @@ export function toggleFurnitureState(layout: OfficeLayout, uid: string): OfficeL
 export function getWallPlacementRow(type: string, row: number): number {
   const entry = getCatalogEntry(type)
   if (!entry?.canPlaceOnWalls) return row
-  return row - (entry.footprintH - 1)
+  return row - (entry.footprintH - 1) + (entry.rowOffset || 0)
 }
 
 /** Check if furniture can be placed at (col, row) without overlapping. */

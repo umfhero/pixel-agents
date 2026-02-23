@@ -7,7 +7,7 @@ export const TASK_DESCRIPTION_DISPLAY_MAX_LENGTH = 40;
 // ── PNG / Asset Parsing ─────────────────────────────────────
 export const PNG_ALPHA_THRESHOLD = 128;
 export const WALL_PIECE_WIDTH = 16;
-export const WALL_PIECE_HEIGHT = 32;
+export const WALL_PIECE_HEIGHT = 16;
 export const WALL_GRID_COLS = 4;
 export const WALL_BITMASK_COUNT = 16;
 export const FLOOR_PATTERN_COUNT = 7;

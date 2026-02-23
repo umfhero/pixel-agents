@@ -69,6 +69,12 @@ export function getColorizedFloorSprite(patternIndex: number, color: FloorColor)
     return err
   }
 
-  // Floor tiles are always colorized (grayscale patterns need Photoshop-style Colorize)
+  // Floor tiles are always colorized (grayscale patterns need Photoshop-style Colorize).
+  // However, if the color is completely neutral (0,0,0,0), skip colorization
+  // and return the original sprite — this preserves the native colors of
+  // pre-colored tile sprites (e.g., from the retro asset pack).
+  if (color.h === 0 && color.s === 0 && color.b === 0 && color.c === 0) {
+    return base
+  }
   return getColorizedSprite(key, base, { ...color, colorize: true })
 }

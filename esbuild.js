@@ -24,6 +24,18 @@ function copyAssets() {
 	} else {
 		console.log('ℹ️  assets/ folder not found (optional)');
 	}
+
+	// Also copy tile sprites from project root assets/ (floors.png, walls.png)
+	const rootAssetsDir = path.join(__dirname, 'assets');
+	const tileFiles = ['floors.png', 'walls.png'];
+	for (const file of tileFiles) {
+		const src = path.join(rootAssetsDir, file);
+		if (fs.existsSync(src)) {
+			if (!fs.existsSync(dstDir)) fs.mkdirSync(dstDir, { recursive: true });
+			fs.copyFileSync(src, path.join(dstDir, file));
+			console.log(`✓ Copied ${file} → dist/assets/${file}`);
+		}
+	}
 }
 
 /**

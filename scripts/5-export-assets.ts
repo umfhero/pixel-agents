@@ -59,8 +59,8 @@ interface CatalogEntry {
 }
 
 const metadataPath = './scripts/.tileset-working/tileset-metadata-final.json'
-const tilesetPath = './webview-ui/public/assets/office_tileset_16x16.png'
-const assetsDir = './webview-ui/public/assets/furniture'
+const tilesetPath = './assets/atlas_16x.png'
+const assetsDir = './assets/furniture'
 
 console.log(`\n📦 Stage 5: Export Assets to Folder Structure + Catalog\n`)
 

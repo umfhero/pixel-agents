@@ -37,10 +37,11 @@ export function layoutToFurnitureInstances(furniture: PlacedFurniture[]): Furnit
   for (const item of furniture) {
     const entry = getCatalogEntry(item.type)
     if (!entry) continue
-    const x = item.col * TILE_SIZE
-    const y = item.row * TILE_SIZE
     const spriteH = entry.sprite.length
-    let zY = y + spriteH
+    const yShift = entry.yOffset || 0
+    const x = item.col * TILE_SIZE
+    const y = item.row * TILE_SIZE + yShift
+    let zY = item.row * TILE_SIZE + spriteH + yShift
 
     // Chair z-sorting: ensure characters sitting on chairs render correctly
     if (entry.category === 'chairs') {
@@ -234,8 +235,8 @@ export function createDefaultLayout(): OfficeLayout {
   const furniture: PlacedFurniture[] = [
     { uid: 'desk-left', type: FurnitureType.DESK, col: 4, row: 3 },
     { uid: 'desk-right', type: FurnitureType.DESK, col: 13, row: 3 },
-    { uid: 'pc-left', type: 'pc_back', col: 4, row: 3 },
-    { uid: 'pc-right', type: FurnitureType.PC, col: 14, row: 4 },
+    { uid: 'pc-left', type: FurnitureType.PC, col: 4, row: 3 },
+    { uid: 'pc-right', type: FurnitureType.PC, col: 14, row: 3 },
     { uid: 'bookshelf-1', type: FurnitureType.BOOKSHELF, col: 1, row: 5 },
     { uid: 'plant-left', type: FurnitureType.PLANT, col: 1, row: 1 },
     { uid: 'cooler-1', type: FurnitureType.COOLER, col: 17, row: 7 },

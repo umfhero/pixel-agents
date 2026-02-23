@@ -39,6 +39,7 @@ export interface EditorActions {
   handleEditorEraseAction: (col: number, row: number) => void
   handleEditorSelectionChange: () => void
   handleDragMove: (uid: string, newCol: number, newRow: number) => void
+  handleLoadPreset: (layout: OfficeLayout) => void
 }
 
 export function useEditorActions(
@@ -76,6 +77,10 @@ export function useEditorActions(
     saveLayout(newLayout)
     setEditorTick((n) => n + 1)
   }, [getOfficeState, editorState, saveLayout])
+
+  const handleLoadPreset = useCallback((presetLayout: OfficeLayout) => {
+    applyEdit(presetLayout)
+  }, [applyEdit])
 
   const handleAddAgent = useCallback(() => {
     vscode.postMessage({ type: 'addAgent' })
@@ -522,5 +527,6 @@ export function useEditorActions(
     handleEditorEraseAction,
     handleEditorSelectionChange,
     handleDragMove,
+    handleLoadPreset,
   }
 }

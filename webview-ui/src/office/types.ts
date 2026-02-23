@@ -121,6 +121,10 @@ export interface FurnitureCatalogEntry {
   backgroundTiles?: number
   /** Whether this item can be placed on wall tiles */
   canPlaceOnWalls?: boolean
+  /** Offset in tiles for placement (e.g., -1 to place 1 tile higher than clicked) */
+  rowOffset?: number
+  /** Visual offset in pixels for rendering */
+  yOffset?: number
 }
 
 export interface PlacedFurniture {

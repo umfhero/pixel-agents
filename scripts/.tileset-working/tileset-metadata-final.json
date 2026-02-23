@@ -1,4622 +1,2307 @@
 {
   "version": 1,
-  "timestamp": "2026-02-16T22:28:09.674Z",
-  "sourceFile": "assets/office_tileset_16x16.png",
+  "timestamp": "2026-02-23T10:34:02.554Z",
+  "sourceFile": "assets/atlas_16x.png",
   "tileset": {
-    "width": 256,
-    "height": 512
+    "width": 768,
+    "height": 256
   },
-  "backgroundColor": "#00000000",
+  "backgroundColor": "#ff00ff00",
   "assets": [
     {
-      "id": "ASSET_4",
-      "paddedX": 128,
+      "id": "ASSET_0",
+      "paddedX": 0,
       "paddedY": 0,
-      "paddedWidth": 48,
-      "paddedHeight": 32,
-      "name": "COUNTER_WOOD_MD",
-      "label": "Solid Wooden Counter",
-      "category": "desks",
-      "footprintW": 3,
-      "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": true,
+      "paddedWidth": 208,
+      "paddedHeight": 256,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_0",
+      "label": "Retro Prop 0",
+      "category": "misc",
+      "footprintW": 13,
+      "footprintH": 16,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnWalls": false
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_4",
+      "paddedX": 304,
+      "paddedY": 0,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_1",
+      "label": "Retro Prop 1",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_6",
-      "paddedX": 0,
-      "paddedY": 22,
-      "paddedWidth": 48,
-      "paddedHeight": 32,
-      "name": "DESK_MODERN_SM",
-      "label": "Modern Desk Small",
-      "category": "desks",
-      "footprintW": 3,
-      "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": true,
-      "discard": true,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_7",
-      "paddedX": 80,
-      "paddedY": 23,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "COUNTER_WHITE_SM",
-      "label": "Small White Counter",
-      "category": "desks",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": true,
+      "paddedX": 320,
+      "paddedY": 0,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_2",
+      "label": "Retro Prop 2",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnWalls": false
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_10",
-      "paddedX": 0,
-      "paddedY": 54,
+      "id": "ASSET_14",
+      "paddedX": 337,
+      "paddedY": 0,
       "paddedWidth": 32,
       "paddedHeight": 32,
-      "name": "TABLE_WOOD_SM",
-      "label": "Small Wooden Table",
-      "category": "desks",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_3",
+      "label": "Retro Prop 3",
+      "category": "misc",
       "footprintW": 2,
       "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": false,
-      "discard": true,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnWalls": false
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_11",
-      "paddedX": 0,
-      "paddedY": 86,
+      "id": "ASSET_1",
+      "paddedX": 368,
+      "paddedY": 0,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_4",
+      "label": "Retro Prop 4",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_2",
+      "paddedX": 384,
+      "paddedY": 0,
       "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "TABLE_PLAIN_WOOD_SM",
-      "label": "Small Plain Wooden Table",
-      "category": "desks",
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_5",
+      "label": "Retro Prop 5",
+      "category": "misc",
       "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": false,
-      "discard": true,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnWalls": false
+      "footprintH": 3,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_15",
-      "paddedX": 128,
-      "paddedY": 64,
-      "paddedWidth": 48,
+      "paddedX": 400,
+      "paddedY": 0,
+      "paddedWidth": 16,
       "paddedHeight": 32,
-      "name": "COUNTER_PLASTIC_SM",
-      "label": "Small Plastic Counter",
-      "category": "desks",
-      "footprintW": 3,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_6",
+      "label": "Retro Prop 6",
+      "category": "misc",
+      "footprintW": 1,
       "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": true,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnWalls": false
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_5",
+      "paddedX": 424,
+      "paddedY": 0,
+      "paddedWidth": 80,
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_7",
+      "label": "Retro Prop 7",
+      "category": "misc",
+      "footprintW": 5,
+      "footprintH": 3,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_3",
+      "paddedX": 448,
+      "paddedY": 0,
+      "paddedWidth": 320,
+      "paddedHeight": 256,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_8",
+      "label": "Retro Prop 8",
+      "category": "misc",
+      "footprintW": 20,
+      "footprintH": 16,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_7",
+      "paddedX": 128,
+      "paddedY": 6,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_9",
+      "label": "Retro Prop 9",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_8",
+      "paddedX": 144,
+      "paddedY": 6,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_10",
+      "label": "Retro Prop 10",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_9",
+      "paddedX": 160,
+      "paddedY": 7,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_11",
+      "label": "Retro Prop 11",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_10",
+      "paddedX": 176,
+      "paddedY": 7,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_12",
+      "label": "Retro Prop 12",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_11",
+      "paddedX": 208,
+      "paddedY": 7,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_13",
+      "label": "Retro Prop 13",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_12",
+      "paddedX": 224,
+      "paddedY": 7,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_14",
+      "label": "Retro Prop 14",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_13",
+      "paddedX": 264,
+      "paddedY": 8,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_15",
+      "label": "Retro Prop 15",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_17",
-      "paddedX": 112,
-      "paddedY": 512,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "WOODEN_BOOKSHELF_SMALL",
-      "label": "Small Wooden Bookshelf",
-      "category": "storage",
-      "footprintW": 2,
-      "footprintH": 2,
+      "paddedX": 304,
+      "paddedY": 15,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_16",
+      "label": "Retro Prop 16",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_18",
-      "paddedX": 144,
-      "paddedY": 512,
+      "paddedX": 304,
+      "paddedY": 15,
       "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "FULL_WOODEN_BOOKSHELF_SMALL",
-      "label": "Full Small Wooden Bookshelf",
-      "category": "storage",
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_17",
+      "label": "Retro Prop 17",
+      "category": "misc",
       "footprintW": 2,
-      "footprintH": 2,
+      "footprintH": 3,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_25",
-      "paddedX": 128,
-      "paddedY": 136,
-      "paddedWidth": 48,
-      "paddedHeight": 32,
-      "name": "BOOKSHELF_DOUBLE",
-      "label": "Double Bookshelf",
-      "category": "storage",
-      "footprintW": 3,
-      "footprintH": 2,
+      "id": "ASSET_16",
+      "paddedX": 368,
+      "paddedY": 15,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_18",
+      "label": "Retro Prop 18",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
-    },
-    {
-      "id": "ASSET_23",
-      "paddedX": 112,
-      "paddedY": 560,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "WHITE_BOOKSHELF_1",
-      "label": "White Bookshelf",
-      "category": "storage",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_24",
-      "paddedX": 144,
-      "paddedY": 560,
-      "paddedWidth": 32,
+      "paddedX": 127,
+      "paddedY": 26,
+      "paddedWidth": 16,
       "paddedHeight": 32,
-      "name": "FULL_WHITE_BOOKSHELF_1",
-      "label": "Full Small White Bookshelf",
-      "category": "storage",
-      "footprintW": 2,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_19",
+      "label": "Retro Prop 19",
+      "category": "misc",
+      "footprintW": 1,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_25",
+      "paddedX": 145,
+      "paddedY": 26,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_20",
+      "label": "Retro Prop 20",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_26",
-      "paddedX": 240,
-      "paddedY": 144,
+      "paddedX": 159,
+      "paddedY": 26,
       "paddedWidth": 16,
       "paddedHeight": 32,
-      "name": "DOOR_WOOD_VERTICAL",
-      "label": "Wooden Door - Vertical",
-      "category": "decor",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_21",
+      "label": "Retro Prop 21",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "DOOR_WOOD",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
       "canPlaceOnWalls": false,
-      "orientation": "front"
-    },
-    {
-      "id": "ASSET_27_A",
-      "paddedX": 16,
-      "paddedY": 528,
-      "paddedWidth": 32,
-      "paddedHeight": 64,
-      "name": "TABLE_WOOD_LG",
-      "label": "Large Table",
-      "category": "desks",
-      "footprintW": 2,
-      "footprintH": 4,
-      "isDesk": true,
-      "colorEditable": true,
       "discard": false,
-      "partOfGroup": true,
-      "groupId": "TABLE_LG",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1,
-      "orientation": "front"
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_27_B_A_A",
-      "paddedX": 128,
-      "paddedY": 183,
+      "id": "ASSET_27",
+      "paddedX": 177,
+      "paddedY": 26,
       "paddedWidth": 16,
       "paddedHeight": 32,
-      "name": "BOOKSHELF_TALL",
-      "label": "Tall Bookshelf",
-      "category": "storage",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_22",
+      "label": "Retro Prop 22",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
-    },
-    {
-      "id": "ASSET_27_B_A_B_A",
-      "paddedX": 144,
-      "paddedY": 183,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "FULL_BOOKSHELF_TALL",
-      "label": "Full Tall Bookshelf",
-      "category": "storage",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
-    },
-    {
-      "id": "ASSET_27_B_A_B_B_A",
-      "paddedX": 160,
-      "paddedY": 183,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "CABINET_TALL",
-      "label": "Tall Cabinet",
-      "category": "storage",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
-    },
-    {
-      "id": "ASSET_27_B_A_B_B_B_A",
-      "paddedX": 176,
-      "paddedY": 183,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "FULL_CABINET_TALL",
-      "label": "Full Tall Cabinet",
-      "category": "storage",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
-    },
-    {
-      "id": "ASSET_27_B_B_0_0",
-      "paddedX": 128,
-      "paddedY": 221,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "DOOR_WOOD_1",
-      "label": "Wooden Door 1",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "DOOR_WOOD",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1,
-      "orientation": "front",
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_27_B_B_0_1",
-      "paddedX": 144,
-      "paddedY": 221,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "DOOR_WHITE_1",
-      "label": "White Door 1",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "DOOR_WHITE",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1,
-      "orientation": "front",
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_27_B_B_0_2",
-      "paddedX": 160,
-      "paddedY": 221,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "DOOR_WOOD_2",
-      "label": "Wooden Door 2",
-      "category": "storage",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "DOOR_WOOD",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1,
-      "orientation": "front",
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_27_B_B_0_3",
-      "paddedX": 176,
-      "paddedY": 221,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "DOOR_WHITE_2",
-      "label": "White Door 2",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "DOOR_WHITE",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1,
-      "orientation": "front",
-      "canPlaceOnWalls": false
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_28",
-      "paddedX": 192,
-      "paddedY": 184,
-      "paddedWidth": 32,
+      "paddedX": 191,
+      "paddedY": 26,
+      "paddedWidth": 16,
       "paddedHeight": 32,
-      "name": "WHITE_BOOKSHELF_2",
-      "label": "White Bookshelf",
-      "category": "storage",
-      "footprintW": 2,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_23",
+      "label": "Retro Prop 23",
+      "category": "misc",
+      "footprintW": 1,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_29",
-      "paddedX": 224,
-      "paddedY": 184,
-      "paddedWidth": 32,
+      "paddedX": 209,
+      "paddedY": 26,
+      "paddedWidth": 16,
       "paddedHeight": 32,
-      "name": "FULL_WHITE_BOOKSHELF_2",
-      "label": "Full White Bookshelf",
-      "category": "storage",
-      "footprintW": 2,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_24",
+      "label": "Retro Prop 24",
+      "category": "misc",
+      "footprintW": 1,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_20",
+      "paddedX": 64,
+      "paddedY": 30,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_25",
+      "label": "Retro Prop 25",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_21",
+      "paddedX": 96,
+      "paddedY": 30,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_26",
+      "label": "Retro Prop 26",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_22",
+      "paddedX": 224,
+      "paddedY": 31,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_27",
+      "label": "Retro Prop 27",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_23",
+      "paddedX": 240,
+      "paddedY": 31,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_28",
+      "label": "Retro Prop 28",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_19",
+      "paddedX": 368,
+      "paddedY": 31,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_29",
+      "label": "Retro Prop 29",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_30",
-      "paddedX": 224,
-      "paddedY": 224,
+      "paddedX": 338,
+      "paddedY": 36,
       "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "DOOR_WHITE_VERTICAL",
-      "label": "White Door - Vertical",
-      "category": "decor",
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_30",
+      "label": "Retro Prop 30",
+      "category": "misc",
       "footprintW": 1,
-      "footprintH": 2,
+      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "DOOR_WHITE",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
       "canPlaceOnWalls": false,
-      "orientation": "front"
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_32",
-      "paddedX": 0,
-      "paddedY": 258,
+      "id": "ASSET_31",
+      "paddedX": 352,
+      "paddedY": 38,
       "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "CHAIR_CUSHIONED_FRONT",
-      "label": "Cushioned Chair - Front",
-      "category": "chairs",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_31",
+      "label": "Retro Prop 31",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
-      "colorEditable": true,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": true,
-      "groupId": "CUSHIONED_CHAIR",
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_38",
-      "paddedX": 16,
-      "paddedY": 258,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CHAIR_CUSHIONED_BACK",
-      "label": "Cushioned Chair - Back",
-      "category": "chairs",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "CUSHIONED_CHAIR",
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_33",
-      "paddedX": 32,
-      "paddedY": 258,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CHAIR_CUSHIONED_RIGHT",
-      "label": "Cushioned Chair - Right",
-      "category": "chairs",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "CUSHIONED_CHAIR",
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_34",
-      "paddedX": 48,
-      "paddedY": 258,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CHAIR_CUSHIONED_LEFT",
-      "label": "Cushioned Chair - Left",
-      "category": "chairs",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "CUSHIONED_CHAIR",
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_35",
-      "paddedX": 64,
-      "paddedY": 258,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CHAIR_ROTATING_FRONT",
-      "label": "Rotating Chair - Front",
-      "category": "chairs",
-      "footprintW": 1,
-      "footprintH": 1,
+      "paddedX": 441,
+      "paddedY": 41,
+      "paddedWidth": 32,
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_32",
+      "label": "Retro Prop 32",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 3,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": true,
-      "groupId": "ROTATING_CHAIR",
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_39",
-      "paddedX": 80,
-      "paddedY": 258,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CHAIR_ROTATING_BACK",
-      "label": "Rotating Chair - Back",
-      "category": "chairs",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "ROTATING_CHAIR",
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_36",
-      "paddedX": 96,
-      "paddedY": 258,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CHAIR_ROTATING_RIGHT",
-      "label": "Rotating Chair - Right",
-      "category": "chairs",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "ROTATING_CHAIR",
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_37",
-      "paddedX": 112,
-      "paddedY": 258,
+      "paddedX": 64,
+      "paddedY": 46,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_33",
+      "label": "Retro Prop 33",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_38",
+      "paddedX": 96,
+      "paddedY": 46,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_34",
+      "label": "Retro Prop 34",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_36",
+      "paddedX": 320,
+      "paddedY": 46,
       "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "CHAIR_ROTATING_LEFT",
-      "label": "Rotating Chair - Left",
-      "category": "chairs",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_35",
+      "label": "Retro Prop 35",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": true,
-      "groupId": "ROTATING_CHAIR",
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_42",
-      "paddedX": 142,
-      "paddedY": 264,
+      "id": "ASSET_33",
+      "paddedX": 240,
+      "paddedY": 47,
       "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "WATER_COOLER",
-      "label": "Water Cooler",
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_36",
+      "label": "Retro Prop 36",
       "category": "misc",
       "footprintW": 1,
-      "footprintH": 2,
+      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_41_0_1",
-      "paddedX": 208,
-      "paddedY": 264,
+      "id": "ASSET_34",
+      "paddedX": 368,
+      "paddedY": 47,
       "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "FRIDGE",
-      "label": "Fridge",
-      "category": "storage",
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_37",
+      "label": "Retro Prop 37",
+      "category": "misc",
       "footprintW": 1,
-      "footprintH": 2,
+      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_32",
+      "paddedX": 224,
+      "paddedY": 48,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_38",
+      "label": "Retro Prop 38",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_40",
-      "paddedX": 225,
-      "paddedY": 264,
+      "paddedX": 392,
+      "paddedY": 49,
       "paddedWidth": 32,
       "paddedHeight": 32,
-      "name": "VENDING_MACHINE",
-      "label": "Snack Vending Machine",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_39",
+      "label": "Retro Prop 39",
       "category": "misc",
       "footprintW": 2,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_39",
+      "paddedX": 264,
+      "paddedY": 56,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_40",
+      "label": "Retro Prop 40",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_43",
+      "paddedX": 64,
+      "paddedY": 57,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_41",
+      "label": "Retro Prop 41",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_44",
-      "paddedX": 130,
-      "paddedY": 278,
+      "paddedX": 368,
+      "paddedY": 60,
       "paddedWidth": 16,
       "paddedHeight": 16,
-      "erasedPixels": [
-        {
-          "x": 14,
-          "y": 1
-        },
-        {
-          "x": 14,
-          "y": 2
-        },
-        {
-          "x": 14,
-          "y": 3
-        },
-        {
-          "x": 14,
-          "y": 4
-        },
-        {
-          "x": 14,
-          "y": 5
-        },
-        {
-          "x": 14,
-          "y": 6
-        },
-        {
-          "x": 14,
-          "y": 7
-        },
-        {
-          "x": 14,
-          "y": 8
-        },
-        {
-          "x": 14,
-          "y": 9
-        },
-        {
-          "x": 14,
-          "y": 10
-        },
-        {
-          "x": 14,
-          "y": 11
-        },
-        {
-          "x": 14,
-          "y": 12
-        },
-        {
-          "x": 14,
-          "y": 13
-        },
-        {
-          "x": 14,
-          "y": 14
-        },
-        {
-          "x": 14,
-          "y": 15
-        },
-        {
-          "x": 15,
-          "y": 15
-        },
-        {
-          "x": 15,
-          "y": 14
-        },
-        {
-          "x": 15,
-          "y": 13
-        },
-        {
-          "x": 15,
-          "y": 12
-        },
-        {
-          "x": 15,
-          "y": 11
-        },
-        {
-          "x": 15,
-          "y": 10
-        },
-        {
-          "x": 15,
-          "y": 9
-        },
-        {
-          "x": 15,
-          "y": 8
-        },
-        {
-          "x": 15,
-          "y": 7
-        },
-        {
-          "x": 15,
-          "y": 6
-        },
-        {
-          "x": 15,
-          "y": 5
-        },
-        {
-          "x": 15,
-          "y": 4
-        },
-        {
-          "x": 15,
-          "y": 3
-        },
-        {
-          "x": 15,
-          "y": 2
-        },
-        {
-          "x": 15,
-          "y": 1
-        },
-        {
-          "x": 15,
-          "y": 0
-        },
-        {
-          "x": 14,
-          "y": 0
-        }
-      ],
-      "name": "BIN",
-      "label": "Trash Bin",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_42",
+      "label": "Retro Prop 42",
       "category": "misc",
       "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_46",
-      "paddedX": 16,
-      "paddedY": 288,
-      "paddedWidth": 16,
+      "id": "ASSET_42",
+      "paddedX": 160,
+      "paddedY": 63,
+      "paddedWidth": 32,
       "paddedHeight": 32,
-      "name": "TABLE_WOOD_VERTICAL",
-      "label": "Wooden Table - Vertical",
-      "category": "desks",
-      "footprintW": 1,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_43",
+      "label": "Retro Prop 43",
+      "category": "misc",
+      "footprintW": 2,
       "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": true,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_41",
+      "paddedX": 240,
+      "paddedY": 63,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_44",
+      "label": "Retro Prop 44",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_47",
-      "paddedX": 32,
-      "paddedY": 288,
+      "paddedX": 304,
+      "paddedY": 63,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_45",
+      "label": "Retro Prop 45",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_48",
+      "paddedX": 336,
+      "paddedY": 63,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_46",
+      "label": "Retro Prop 46",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_45",
+      "paddedX": 480,
+      "paddedY": 63,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_47",
+      "label": "Retro Prop 47",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_46",
+      "paddedX": 192,
+      "paddedY": 73,
+      "paddedWidth": 48,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_48",
+      "label": "Retro Prop 48",
+      "category": "misc",
+      "footprintW": 3,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_53",
+      "paddedX": 369,
+      "paddedY": 77,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_49",
+      "label": "Retro Prop 49",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_50",
+      "paddedX": 128,
+      "paddedY": 78,
       "paddedWidth": 16,
       "paddedHeight": 32,
-      "name": "TABLE_WHITE_VERTICAL",
-      "label": "White Table - Vertical",
-      "category": "desks",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_50",
+      "label": "Retro Prop 50",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_49",
-      "paddedX": 0,
-      "paddedY": 290,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "STOOL",
-      "label": "Small Wooden Stool",
-      "category": "chairs",
-      "footprintW": 1,
-      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_50_0_0",
-      "paddedX": 64,
-      "paddedY": 299,
-      "paddedWidth": 32,
-      "paddedHeight": 16,
-      "name": "WOOD_COFEE_TABLE",
-      "label": "Wooden Coffee Table",
-      "category": "desks",
-      "footprintW": 2,
-      "footprintH": 1,
-      "isDesk": true,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_50_0_1",
-      "paddedX": 96,
-      "paddedY": 299,
-      "paddedWidth": 32,
-      "paddedHeight": 16,
-      "name": "WHITE_COFEE_TABLE",
-      "label": "White Cofee Table",
-      "category": "decor",
-      "footprintW": 2,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_51",
-      "paddedX": 225,
-      "paddedY": 299,
+      "paddedX": 144,
+      "paddedY": 78,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_51",
+      "label": "Retro Prop 51",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_49",
+      "paddedX": 240,
+      "paddedY": 79,
       "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "COFFEE_MUG",
-      "label": "Coffee Mug",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_52",
+      "label": "Retro Prop 52",
       "category": "misc",
       "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
-      "colorEditable": true,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_54",
-      "paddedX": 125,
-      "paddedY": 303,
+      "id": "ASSET_52",
+      "paddedX": 481,
+      "paddedY": 79,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_53",
+      "label": "Retro Prop 53",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_57",
+      "paddedX": 441,
+      "paddedY": 89,
+      "paddedWidth": 32,
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_54",
+      "label": "Retro Prop 54",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 3,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_58",
+      "paddedX": 160,
+      "paddedY": 95,
       "paddedWidth": 32,
       "paddedHeight": 32,
-      "erasedPixels": [
-        {
-          "x": 1,
-          "y": 10
-        },
-        {
-          "x": 1,
-          "y": 9
-        },
-        {
-          "x": 1,
-          "y": 8
-        },
-        {
-          "x": 1,
-          "y": 7
-        },
-        {
-          "x": 1,
-          "y": 6
-        },
-        {
-          "x": 1,
-          "y": 5
-        },
-        {
-          "x": 1,
-          "y": 4
-        },
-        {
-          "x": 1,
-          "y": 3
-        },
-        {
-          "x": 1,
-          "y": 2
-        },
-        {
-          "x": 1,
-          "y": 1
-        },
-        {
-          "x": 1,
-          "y": 0
-        },
-        {
-          "x": 0,
-          "y": 0
-        },
-        {
-          "x": 0,
-          "y": 1
-        },
-        {
-          "x": 0,
-          "y": 2
-        },
-        {
-          "x": 0,
-          "y": 3
-        },
-        {
-          "x": 0,
-          "y": 4
-        },
-        {
-          "x": 0,
-          "y": 5
-        },
-        {
-          "x": 0,
-          "y": 6
-        },
-        {
-          "x": 0,
-          "y": 7
-        },
-        {
-          "x": 0,
-          "y": 8
-        },
-        {
-          "x": 0,
-          "y": 9
-        },
-        {
-          "x": 0,
-          "y": 10
-        },
-        {
-          "x": 2,
-          "y": 7
-        },
-        {
-          "x": 2,
-          "y": 6
-        },
-        {
-          "x": 2,
-          "y": 5
-        },
-        {
-          "x": 2,
-          "y": 4
-        },
-        {
-          "x": 2,
-          "y": 3
-        },
-        {
-          "x": 2,
-          "y": 2
-        },
-        {
-          "x": 2,
-          "y": 1
-        },
-        {
-          "x": 2,
-          "y": 0
-        }
-      ],
-      "name": "COFFEE_MACHINE_MUG",
-      "label": "Coffe Machine + Mug",
-      "category": "electronics",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_55",
+      "label": "Retro Prop 55",
+      "category": "misc",
       "footprintW": 2,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_55",
-      "paddedX": 161,
-      "paddedY": 309,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "COFFEE_MACHINE",
-      "label": "Coffee Machine",
+      "paddedX": 304,
+      "paddedY": 95,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_56",
+      "label": "Retro Prop 56",
       "category": "misc",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "erasedPixels": [
-        {
-          "x": 4,
-          "y": 31
-        },
-        {
-          "x": 5,
-          "y": 31
-        },
-        {
-          "x": 10,
-          "y": 31
-        },
-        {
-          "x": 11,
-          "y": 31
-        },
-        {
-          "x": 12,
-          "y": 31
-        },
-        {
-          "x": 13,
-          "y": 31
-        },
-        {
-          "x": 14,
-          "y": 31
-        },
-        {
-          "x": 15,
-          "y": 31
-        },
-        {
-          "x": 3,
-          "y": 31
-        },
-        {
-          "x": 6,
-          "y": 31
-        },
-        {
-          "x": 7,
-          "y": 31
-        },
-        {
-          "x": 8,
-          "y": 31
-        },
-        {
-          "x": 9,
-          "y": 31
-        }
-      ],
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_61",
-      "paddedX": 192,
-      "paddedY": 304,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "TELEPHONE",
-      "label": "Telephone",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_63",
-      "paddedX": 32,
-      "paddedY": 319,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "WINDOW_DOUBLE_WOOD",
-      "label": "Double Pane Wood Window",
-      "category": "wall",
       "footprintW": 2,
-      "footprintH": 2,
+      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_64",
-      "paddedX": 64,
-      "paddedY": 319,
+      "id": "ASSET_56",
+      "paddedX": 336,
+      "paddedY": 95,
       "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "WINDOW_DOUBLE_WHITE",
-      "label": "Double Window White",
-      "category": "wall",
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_57",
+      "label": "Retro Prop 57",
+      "category": "misc",
       "footprintW": 2,
-      "footprintH": 2,
+      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": true,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_65",
-      "paddedX": 96,
-      "paddedY": 319,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "WINDOW_DOUBLE_WHITE_2",
-      "label": "White Double Window",
-      "category": "wall",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_71",
-      "paddedX": 147,
-      "paddedY": 336,
+      "id": "ASSET_59",
+      "paddedX": 481,
+      "paddedY": 95,
       "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "BOOK_SINGLE_BLUE",
-      "label": "Small Book",
-      "category": "decor",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_58",
+      "label": "Retro Prop 58",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
-      "colorEditable": true,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_54",
+      "paddedX": 240,
+      "paddedY": 96,
+      "paddedWidth": 16,
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_59",
+      "label": "Retro Prop 59",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 3,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_60",
+      "paddedX": 369,
+      "paddedY": 96,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_60",
+      "label": "Retro Prop 60",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_62",
+      "paddedX": 392,
+      "paddedY": 97,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_61",
+      "label": "Retro Prop 61",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_61",
+      "paddedX": 264,
+      "paddedY": 104,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_62",
+      "label": "Retro Prop 62",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_65",
+      "paddedX": 128,
+      "paddedY": 110,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_63",
+      "label": "Retro Prop 63",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_66",
+      "paddedX": 144,
+      "paddedY": 110,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_64",
+      "label": "Retro Prop 64",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_67",
+      "paddedX": 481,
+      "paddedY": 111,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_65",
+      "label": "Retro Prop 65",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_63",
+      "paddedX": 304,
+      "paddedY": 112,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_66",
+      "label": "Retro Prop 66",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_64",
+      "paddedX": 336,
+      "paddedY": 112,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_67",
+      "label": "Retro Prop 67",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_68",
+      "paddedX": 369,
+      "paddedY": 112,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_68",
+      "label": "Retro Prop 68",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_69",
+      "paddedX": 192,
+      "paddedY": 121,
+      "paddedWidth": 48,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_69",
+      "label": "Retro Prop 69",
+      "category": "misc",
+      "footprintW": 3,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_73",
+      "paddedX": 160,
+      "paddedY": 122,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_70",
+      "label": "Retro Prop 70",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_71",
+      "paddedX": 481,
+      "paddedY": 127,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_71",
+      "label": "Retro Prop 71",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_70",
+      "paddedX": 128,
+      "paddedY": 128,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_72",
+      "label": "Retro Prop 72",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
       "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_72",
-      "paddedX": 163,
-      "paddedY": 336,
+      "paddedX": 369,
+      "paddedY": 128,
       "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "BOOK_SINGLE_RED",
-      "label": "Small Book",
-      "category": "decor",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_73",
+      "label": "Retro Prop 73",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
-      "colorEditable": true,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
       "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_78",
-      "paddedX": 192,
-      "paddedY": 359,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "MONITOR_FRONT_OFF",
-      "label": "Monitor - Front - Off",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "MONITOR",
-      "canPlaceOnSurfaces": true
-    },
-    {
-      "id": "ASSET_79",
-      "paddedX": 224,
-      "paddedY": 359,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "MONITOR_FRONT_ON",
-      "label": "Monitor - Front - On",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "MONITOR",
-      "canPlaceOnSurfaces": true
-    },
-    {
-      "id": "ASSET_83",
-      "paddedX": 0,
-      "paddedY": 360,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CLOCK_WALL_WHITE",
-      "label": "White Wall Clock",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_84",
-      "paddedX": 15,
-      "paddedY": 352,
-      "paddedWidth": 16,
+      "id": "ASSET_81",
+      "paddedX": 416,
+      "paddedY": 136,
+      "paddedWidth": 32,
       "paddedHeight": 32,
-      "name": "CLOCK_WALL_COLOR",
-      "label": "Colorful Wall Clock",
-      "category": "wall",
-      "footprintW": 1,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_74",
+      "label": "Retro Prop 74",
+      "category": "misc",
+      "footprintW": 2,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_87",
-      "paddedX": 64,
-      "paddedY": 360,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CLOCK_WALL_BLACK",
-      "label": "Black Wall Clock",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_74",
-      "paddedX": 128,
-      "paddedY": 360,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "MONITOR_CRT_OFF",
-      "label": "CRT Monitor - Off",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "CRT_MONITOR",
-      "canPlaceOnSurfaces": true
-    },
-    {
-      "id": "ASSET_75",
-      "paddedX": 128,
-      "paddedY": 360,
-      "paddedWidth": 32,
-      "paddedHeight": 16,
-      "name": "COMPUTER_FRONT_OFF",
-      "label": "Computer - Front - Off",
-      "category": "electronics",
-      "footprintW": 2,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "COMPUTER",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 0,
       "canPlaceOnWalls": false,
-      "orientation": "front"
-    },
-    {
-      "id": "ASSET_76",
-      "paddedX": 160,
-      "paddedY": 360,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "MONITOR_CRT_ON",
-      "label": "CRT Monitor - On",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
       "discard": false,
-      "partOfGroup": true,
-      "groupId": "CRT_MONITOR",
       "canPlaceOnSurfaces": true
     },
     {
       "id": "ASSET_77",
-      "paddedX": 160,
-      "paddedY": 360,
-      "paddedWidth": 32,
+      "paddedX": 368,
+      "paddedY": 142,
+      "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "COMPUTER_FRONT_ON",
-      "label": "Computer - Front - On",
-      "category": "electronics",
-      "footprintW": 2,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "COMPUTER",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false,
-      "orientation": "front"
-    },
-    {
-      "id": "ASSET_80",
-      "paddedX": 80,
-      "paddedY": 351,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "WOOD_WINDOW_SM",
-      "label": "Small Wooden Window",
-      "category": "wall",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_81",
-      "paddedX": 96,
-      "paddedY": 351,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "WHITE_WINDOW_SM",
-      "label": "Small White Window",
-      "category": "wall",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_82",
-      "paddedX": 112,
-      "paddedY": 351,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "WHITE_WINDOW_SM_2",
-      "label": "Small White Window",
-      "category": "wall",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_90",
-      "paddedX": 192,
-      "paddedY": 358,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "FULL_COMPUTER_COFFEE_OFF",
-      "label": "Full Computer with Coffee",
-      "category": "electronics",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "FULL_COMPUTER_COFFEE",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "orientation": "front",
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_92",
-      "paddedX": 224,
-      "paddedY": 358,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "FULL_COMPUTER_COFFEE_ON",
-      "label": "Full Computer with Coffee",
-      "category": "electronics",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "FULL_COMPUTER_COFFEE",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "orientation": "front",
-      "canPlaceOnWalls": false,
-      "erasedPixels": [
-        {
-          "x": 20,
-          "y": 31
-        },
-        {
-          "x": 21,
-          "y": 31
-        },
-        {
-          "x": 22,
-          "y": 31
-        },
-        {
-          "x": 23,
-          "y": 31
-        },
-        {
-          "x": 24,
-          "y": 31
-        },
-        {
-          "x": 25,
-          "y": 31
-        },
-        {
-          "x": 26,
-          "y": 31
-        },
-        {
-          "x": 27,
-          "y": 31
-        },
-        {
-          "x": 27,
-          "y": 30
-        },
-        {
-          "x": 26,
-          "y": 30
-        },
-        {
-          "x": 25,
-          "y": 30
-        },
-        {
-          "x": 24,
-          "y": 30
-        },
-        {
-          "x": 23,
-          "y": 30
-        },
-        {
-          "x": 22,
-          "y": 30
-        },
-        {
-          "x": 21,
-          "y": 30
-        },
-        {
-          "x": 20,
-          "y": 29
-        },
-        {
-          "x": 19,
-          "y": 29
-        },
-        {
-          "x": 19,
-          "y": 30
-        },
-        {
-          "x": 19,
-          "y": 31
-        },
-        {
-          "x": 20,
-          "y": 30
-        }
-      ]
-    },
-    {
-      "id": "ASSET_94",
-      "paddedX": 128,
-      "paddedY": 353,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "FULL_COMPUTER_OFF",
-      "label": "Full Computer - Off",
-      "category": "electronics",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "FULL_COMPUTER",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "orientation": "front",
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_95",
-      "paddedX": 160,
-      "paddedY": 353,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "FULL_COMPUTER_ON",
-      "label": "Full Computer - On",
-      "category": "electronics",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "FULL_COMPUTER",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "orientation": "front",
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_98",
-      "paddedX": 159,
-      "paddedY": 386,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
       "erasedPixels": [],
-      "name": "LAPTOP_RIGHT",
-      "label": "Laptop - Right",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "orientation": "right",
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_99",
-      "paddedX": 177,
-      "paddedY": 386,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "erasedPixels": [
-        {
-          "x": 13,
-          "y": 31
-        },
-        {
-          "x": 12,
-          "y": 31
-        }
-      ],
-      "name": "LAPTOP_LEFT",
-      "label": "Laptop - Left",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "orientation": "left",
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_100",
-      "paddedX": 240,
-      "paddedY": 392,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "PAPER_SIDE",
-      "label": "Paper - Side",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "PAPER",
-      "canPlaceOnSurfaces": true,
-      "erasedPixels": [
-        {
-          "x": 4,
-          "y": 0
-        },
-        {
-          "x": 4,
-          "y": 1
-        },
-        {
-          "x": 4,
-          "y": 2
-        },
-        {
-          "x": 4,
-          "y": 3
-        },
-        {
-          "x": 4,
-          "y": 4
-        },
-        {
-          "x": 5,
-          "y": 4
-        },
-        {
-          "x": 6,
-          "y": 4
-        },
-        {
-          "x": 7,
-          "y": 4
-        },
-        {
-          "x": 7,
-          "y": 3
-        },
-        {
-          "x": 8,
-          "y": 3
-        },
-        {
-          "x": 9,
-          "y": 3
-        },
-        {
-          "x": 10,
-          "y": 3
-        },
-        {
-          "x": 11,
-          "y": 3
-        },
-        {
-          "x": 11,
-          "y": 2
-        },
-        {
-          "x": 10,
-          "y": 2
-        },
-        {
-          "x": 9,
-          "y": 2
-        },
-        {
-          "x": 8,
-          "y": 2
-        },
-        {
-          "x": 7,
-          "y": 2
-        },
-        {
-          "x": 6,
-          "y": 2
-        },
-        {
-          "x": 5,
-          "y": 2
-        },
-        {
-          "x": 5,
-          "y": 3
-        },
-        {
-          "x": 8,
-          "y": 4
-        },
-        {
-          "x": 9,
-          "y": 4
-        },
-        {
-          "x": 10,
-          "y": 4
-        },
-        {
-          "x": 6,
-          "y": 3
-        },
-        {
-          "x": 3,
-          "y": 3
-        },
-        {
-          "x": 3,
-          "y": 2
-        },
-        {
-          "x": 3,
-          "y": 1
-        },
-        {
-          "x": 3,
-          "y": 0
-        },
-        {
-          "x": 6,
-          "y": 1
-        },
-        {
-          "x": 7,
-          "y": 1
-        },
-        {
-          "x": 8,
-          "y": 1
-        },
-        {
-          "x": 9,
-          "y": 1
-        },
-        {
-          "x": 10,
-          "y": 1
-        },
-        {
-          "x": 11,
-          "y": 1
-        },
-        {
-          "x": 12,
-          "y": 1
-        },
-        {
-          "x": 12,
-          "y": 0
-        },
-        {
-          "x": 11,
-          "y": 0
-        },
-        {
-          "x": 5,
-          "y": 1
-        },
-        {
-          "x": 10,
-          "y": 0
-        },
-        {
-          "x": 9,
-          "y": 0
-        },
-        {
-          "x": 8,
-          "y": 0
-        },
-        {
-          "x": 7,
-          "y": 0
-        },
-        {
-          "x": 6,
-          "y": 0
-        },
-        {
-          "x": 5,
-          "y": 0
-        },
-        {
-          "x": 2,
-          "y": 26
-        },
-        {
-          "x": 3,
-          "y": 26
-        },
-        {
-          "x": 4,
-          "y": 27
-        },
-        {
-          "x": 5,
-          "y": 27
-        },
-        {
-          "x": 6,
-          "y": 27
-        },
-        {
-          "x": 7,
-          "y": 27
-        },
-        {
-          "x": 8,
-          "y": 27
-        },
-        {
-          "x": 9,
-          "y": 27
-        },
-        {
-          "x": 10,
-          "y": 27
-        },
-        {
-          "x": 11,
-          "y": 27
-        },
-        {
-          "x": 12,
-          "y": 27
-        },
-        {
-          "x": 13,
-          "y": 27
-        },
-        {
-          "x": 13,
-          "y": 26
-        },
-        {
-          "x": 12,
-          "y": 26
-        },
-        {
-          "x": 11,
-          "y": 26
-        },
-        {
-          "x": 10,
-          "y": 26
-        },
-        {
-          "x": 9,
-          "y": 26
-        },
-        {
-          "x": 8,
-          "y": 26
-        },
-        {
-          "x": 7,
-          "y": 26
-        },
-        {
-          "x": 6,
-          "y": 26
-        },
-        {
-          "x": 5,
-          "y": 26
-        },
-        {
-          "x": 4,
-          "y": 26
-        },
-        {
-          "x": 2,
-          "y": 27
-        },
-        {
-          "x": 2,
-          "y": 28
-        },
-        {
-          "x": 2,
-          "y": 29
-        },
-        {
-          "x": 2,
-          "y": 30
-        },
-        {
-          "x": 3,
-          "y": 29
-        },
-        {
-          "x": 3,
-          "y": 28
-        },
-        {
-          "x": 4,
-          "y": 28
-        },
-        {
-          "x": 3,
-          "y": 30
-        },
-        {
-          "x": 3,
-          "y": 31
-        },
-        {
-          "x": 2,
-          "y": 31
-        },
-        {
-          "x": 3,
-          "y": 27
-        },
-        {
-          "x": 4,
-          "y": 29
-        },
-        {
-          "x": 5,
-          "y": 28
-        },
-        {
-          "x": 6,
-          "y": 28
-        },
-        {
-          "x": 5,
-          "y": 29
-        },
-        {
-          "x": 4,
-          "y": 30
-        },
-        {
-          "x": 9,
-          "y": 28
-        },
-        {
-          "x": 8,
-          "y": 28
-        },
-        {
-          "x": 7,
-          "y": 28
-        },
-        {
-          "x": 6,
-          "y": 29
-        },
-        {
-          "x": 5,
-          "y": 30
-        },
-        {
-          "x": 6,
-          "y": 30
-        },
-        {
-          "x": 7,
-          "y": 30
-        },
-        {
-          "x": 8,
-          "y": 29
-        },
-        {
-          "x": 9,
-          "y": 29
-        },
-        {
-          "x": 10,
-          "y": 28
-        },
-        {
-          "x": 11,
-          "y": 28
-        },
-        {
-          "x": 7,
-          "y": 29
-        },
-        {
-          "x": 5,
-          "y": 31
-        },
-        {
-          "x": 6,
-          "y": 31
-        },
-        {
-          "x": 7,
-          "y": 31
-        },
-        {
-          "x": 8,
-          "y": 31
-        },
-        {
-          "x": 9,
-          "y": 30
-        },
-        {
-          "x": 10,
-          "y": 29
-        },
-        {
-          "x": 11,
-          "y": 29
-        },
-        {
-          "x": 12,
-          "y": 29
-        },
-        {
-          "x": 12,
-          "y": 28
-        },
-        {
-          "x": 10,
-          "y": 30
-        },
-        {
-          "x": 9,
-          "y": 31
-        },
-        {
-          "x": 11,
-          "y": 30
-        },
-        {
-          "x": 12,
-          "y": 30
-        },
-        {
-          "x": 8,
-          "y": 30
-        },
-        {
-          "x": 4,
-          "y": 31
-        },
-        {
-          "x": 10,
-          "y": 31
-        },
-        {
-          "x": 11,
-          "y": 31
-        },
-        {
-          "x": 12,
-          "y": 31
-        },
-        {
-          "x": 13,
-          "y": 31
-        },
-        {
-          "x": 13,
-          "y": 30
-        },
-        {
-          "x": 13,
-          "y": 29
-        },
-        {
-          "x": 13,
-          "y": 28
-        },
-        {
-          "x": 14,
-          "y": 27
-        },
-        {
-          "x": 14,
-          "y": 28
-        },
-        {
-          "x": 14,
-          "y": 29
-        },
-        {
-          "x": 14,
-          "y": 30
-        },
-        {
-          "x": 14,
-          "y": 31
-        }
-      ],
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false,
-      "orientation": "front"
-    },
-    {
-      "id": "ASSET_107",
-      "paddedX": 128,
-      "paddedY": 384,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "erasedPixels": [
-        {
-          "x": 3,
-          "y": 1
-        },
-        {
-          "x": 4,
-          "y": 1
-        },
-        {
-          "x": 5,
-          "y": 1
-        },
-        {
-          "x": 6,
-          "y": 1
-        },
-        {
-          "x": 7,
-          "y": 1
-        },
-        {
-          "x": 8,
-          "y": 1
-        },
-        {
-          "x": 9,
-          "y": 1
-        },
-        {
-          "x": 10,
-          "y": 1
-        },
-        {
-          "x": 11,
-          "y": 1
-        },
-        {
-          "x": 12,
-          "y": 1
-        },
-        {
-          "x": 12,
-          "y": 0
-        },
-        {
-          "x": 13,
-          "y": 0
-        },
-        {
-          "x": 11,
-          "y": 0
-        },
-        {
-          "x": 10,
-          "y": 0
-        },
-        {
-          "x": 9,
-          "y": 0
-        },
-        {
-          "x": 8,
-          "y": 0
-        },
-        {
-          "x": 7,
-          "y": 0
-        },
-        {
-          "x": 6,
-          "y": 0
-        },
-        {
-          "x": 5,
-          "y": 0
-        },
-        {
-          "x": 4,
-          "y": 0
-        },
-        {
-          "x": 3,
-          "y": 0
-        },
-        {
-          "x": 2,
-          "y": 0
-        }
-      ],
-      "name": "LAPTOP_FRONT_OFF",
-      "label": "Laptop - Front - Off",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "orientation": "front"
-    },
-    {
-      "id": "ASSET_108",
-      "paddedX": 144,
-      "paddedY": 384,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "erasedPixels": [
-        {
-          "x": 2,
-          "y": 1
-        },
-        {
-          "x": 1,
-          "y": 1
-        },
-        {
-          "x": 0,
-          "y": 1
-        },
-        {
-          "x": 2,
-          "y": 0
-        },
-        {
-          "x": 1,
-          "y": 0
-        },
-        {
-          "x": 0,
-          "y": 0
-        }
-      ],
-      "name": "LAPTOP_FRONT_ON",
-      "label": "Laptop - Front - On",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "orientation": "front"
-    },
-    {
-      "id": "ASSET_110",
-      "paddedX": 224,
-      "paddedY": 386,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "PAPER_FRONT",
-      "label": "Paper - Front",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "PAPER",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false,
-      "orientation": "front"
-    },
-    {
-      "id": "ASSET_109",
-      "paddedX": 192,
-      "paddedY": 386,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "LAPTOP_BACK",
-      "label": "Laptop - Back",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "LAPTOP",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false,
-      "orientation": "back"
-    },
-    {
-      "id": "ASSET_101",
-      "paddedX": 0,
-      "paddedY": 384,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "PAINTING_LANDSCAPE",
-      "label": "Landscape Painting",
-      "category": "wall",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_102",
-      "paddedX": 32,
-      "paddedY": 384,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "PAINTING_LANDSCAPE_2",
-      "label": "Landscape Painting",
-      "category": "wall",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_103",
-      "paddedX": 64,
-      "paddedY": 384,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "PAINTING_SM",
-      "label": "Small Painting",
-      "category": "wall",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_104",
-      "paddedX": 80,
-      "paddedY": 384,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "PAINTING_SM_2",
-      "label": "Small Painting",
-      "category": "wall",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_105",
-      "paddedX": 96,
-      "paddedY": 384,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "PAINTING_SM_3",
-      "label": "Small Painting",
-      "category": "wall",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_106",
-      "paddedX": 112,
-      "paddedY": 384,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "TEXT_FRAME",
-      "label": "Framed Text",
-      "category": "wall",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_122",
-      "paddedX": 0,
-      "paddedY": 415,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "CHALKBOARD_WALL_SM",
-      "label": "Small Wall Chalkboard",
-      "category": "wall",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
-    },
-    {
-      "id": "ASSET_118",
-      "paddedX": 32,
-      "paddedY": 415,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "CHART_SM_1",
-      "label": "Small Chart",
-      "category": "wall",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_119",
-      "paddedX": 64,
-      "paddedY": 415,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "erasedPixels": [
-        {
-          "x": 5,
-          "y": 31
-        },
-        {
-          "x": 6,
-          "y": 31
-        },
-        {
-          "x": 7,
-          "y": 31
-        },
-        {
-          "x": 8,
-          "y": 31
-        },
-        {
-          "x": 9,
-          "y": 31
-        },
-        {
-          "x": 10,
-          "y": 31
-        },
-        {
-          "x": 11,
-          "y": 31
-        },
-        {
-          "x": 12,
-          "y": 31
-        },
-        {
-          "x": 13,
-          "y": 31
-        },
-        {
-          "x": 14,
-          "y": 31
-        },
-        {
-          "x": 15,
-          "y": 31
-        },
-        {
-          "x": 16,
-          "y": 31
-        },
-        {
-          "x": 17,
-          "y": 31
-        },
-        {
-          "x": 18,
-          "y": 31
-        },
-        {
-          "x": 19,
-          "y": 31
-        },
-        {
-          "x": 20,
-          "y": 31
-        },
-        {
-          "x": 21,
-          "y": 31
-        },
-        {
-          "x": 22,
-          "y": 31
-        },
-        {
-          "x": 23,
-          "y": 31
-        },
-        {
-          "x": 24,
-          "y": 31
-        },
-        {
-          "x": 25,
-          "y": 31
-        },
-        {
-          "x": 26,
-          "y": 31
-        },
-        {
-          "x": 27,
-          "y": 31
-        },
-        {
-          "x": 28,
-          "y": 31
-        },
-        {
-          "x": 4,
-          "y": 31
-        }
-      ],
-      "name": "CHART_SM_2",
-      "label": "Small Chart",
-      "category": "wall",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_120",
-      "paddedX": 96,
-      "paddedY": 415,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "erasedPixels": [],
-      "name": "CHART_1",
-      "label": "Chart",
-      "category": "wall",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
-    },
-    {
-      "id": "ASSET_114",
-      "paddedX": 192,
-      "paddedY": 408,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "MONITOR_CRT_BACK",
-      "label": "CRT Monitor - Back",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "CRT_MONITOR",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false,
-      "orientation": "back",
-      "erasedPixels": [
-        {
-          "x": 2,
-          "y": 0
-        },
-        {
-          "x": 3,
-          "y": 0
-        },
-        {
-          "x": 4,
-          "y": 0
-        },
-        {
-          "x": 5,
-          "y": 0
-        },
-        {
-          "x": 6,
-          "y": 0
-        },
-        {
-          "x": 7,
-          "y": 0
-        },
-        {
-          "x": 8,
-          "y": 0
-        },
-        {
-          "x": 9,
-          "y": 0
-        },
-        {
-          "x": 10,
-          "y": 0
-        },
-        {
-          "x": 11,
-          "y": 0
-        },
-        {
-          "x": 12,
-          "y": 0
-        },
-        {
-          "x": 13,
-          "y": 0
-        },
-        {
-          "x": 14,
-          "y": 0
-        },
-        {
-          "x": 1,
-          "y": 25
-        },
-        {
-          "x": 2,
-          "y": 25
-        },
-        {
-          "x": 3,
-          "y": 25
-        },
-        {
-          "x": 4,
-          "y": 25
-        },
-        {
-          "x": 3,
-          "y": 24
-        },
-        {
-          "x": 2,
-          "y": 24
-        },
-        {
-          "x": 2,
-          "y": 23
-        },
-        {
-          "x": 1,
-          "y": 23
-        },
-        {
-          "x": 0,
-          "y": 23
-        },
-        {
-          "x": 1,
-          "y": 24
-        },
-        {
-          "x": 0,
-          "y": 24
-        },
-        {
-          "x": 0,
-          "y": 25
-        },
-        {
-          "x": 0,
-          "y": 26
-        },
-        {
-          "x": 0,
-          "y": 27
-        },
-        {
-          "x": 0,
-          "y": 28
-        },
-        {
-          "x": 1,
-          "y": 27
-        },
-        {
-          "x": 1,
-          "y": 26
-        },
-        {
-          "x": 2,
-          "y": 26
-        },
-        {
-          "x": 2,
-          "y": 27
-        },
-        {
-          "x": 2,
-          "y": 28
-        },
-        {
-          "x": 2,
-          "y": 29
-        },
-        {
-          "x": 2,
-          "y": 30
-        },
-        {
-          "x": 1,
-          "y": 31
-        },
-        {
-          "x": 1,
-          "y": 30
-        },
-        {
-          "x": 1,
-          "y": 29
-        },
-        {
-          "x": 1,
-          "y": 28
-        },
-        {
-          "x": 2,
-          "y": 31
-        },
-        {
-          "x": 0,
-          "y": 31
-        },
-        {
-          "x": 0,
-          "y": 30
-        },
-        {
-          "x": 0,
-          "y": 29
-        },
-        {
-          "x": 3,
-          "y": 31
-        },
-        {
-          "x": 6,
-          "y": 31
-        },
-        {
-          "x": 5,
-          "y": 30
-        },
-        {
-          "x": 5,
-          "y": 29
-        },
-        {
-          "x": 5,
-          "y": 28
-        },
-        {
-          "x": 4,
-          "y": 28
-        },
-        {
-          "x": 4,
-          "y": 27
-        },
-        {
-          "x": 4,
-          "y": 30
-        },
-        {
-          "x": 4,
-          "y": 29
-        },
-        {
-          "x": 4,
-          "y": 26
-        },
-        {
-          "x": 4,
-          "y": 31
-        },
-        {
-          "x": 3,
-          "y": 30
-        },
-        {
-          "x": 3,
-          "y": 29
-        },
-        {
-          "x": 3,
-          "y": 28
-        },
-        {
-          "x": 3,
-          "y": 27
-        },
-        {
-          "x": 5,
-          "y": 27
-        },
-        {
-          "x": 6,
-          "y": 28
-        },
-        {
-          "x": 6,
-          "y": 27
-        },
-        {
-          "x": 5,
-          "y": 26
-        },
-        {
-          "x": 3,
-          "y": 26
-        },
-        {
-          "x": 7,
-          "y": 28
-        },
-        {
-          "x": 7,
-          "y": 27
-        },
-        {
-          "x": 8,
-          "y": 27
-        },
-        {
-          "x": 8,
-          "y": 28
-        },
-        {
-          "x": 9,
-          "y": 28
-        },
-        {
-          "x": 8,
-          "y": 29
-        },
-        {
-          "x": 7,
-          "y": 30
-        },
-        {
-          "x": 6,
-          "y": 30
-        },
-        {
-          "x": 5,
-          "y": 31
-        },
-        {
-          "x": 8,
-          "y": 30
-        },
-        {
-          "x": 9,
-          "y": 29
-        },
-        {
-          "x": 10,
-          "y": 28
-        },
-        {
-          "x": 7,
-          "y": 29
-        },
-        {
-          "x": 6,
-          "y": 29
-        },
-        {
-          "x": 7,
-          "y": 31
-        },
-        {
-          "x": 8,
-          "y": 31
-        },
-        {
-          "x": 9,
-          "y": 30
-        },
-        {
-          "x": 9,
-          "y": 31
-        },
-        {
-          "x": 8,
-          "y": 26
-        }
-      ]
-    },
-    {
-      "id": "ASSET_112",
-      "paddedX": 192,
-      "paddedY": 416,
-      "paddedWidth": 32,
-      "paddedHeight": 16,
-      "name": "COMPUTER_BACK",
-      "label": "Computer - Back",
-      "category": "storage",
-      "footprintW": 2,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "COMPUTER",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": false,
-      "orientation": "back"
-    },
-    {
-      "id": "ASSET_121",
-      "paddedX": 152,
-      "paddedY": 415,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "MONITOR_BACK",
-      "label": "Monitor - Back",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": true,
-      "groupId": "MONITOR",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false,
-      "orientation": "back"
-    },
-    {
-      "id": "ASSET_123",
-      "paddedX": 131,
-      "paddedY": 417,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "SERVER",
-      "label": "Server",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": "PC",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_126",
-      "paddedX": 216,
-      "paddedY": 423,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "PRINTER_DESKTOP",
-      "label": "Desktop Printer",
-      "category": "electronics",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": true,
-      "erasedPixels": [
-        {
-          "x": 15,
-          "y": 4
-        },
-        {
-          "x": 15,
-          "y": 3
-        },
-        {
-          "x": 15,
-          "y": 2
-        },
-        {
-          "x": 15,
-          "y": 1
-        },
-        {
-          "x": 15,
-          "y": 0
-        }
-      ],
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false
-    },
-    {
-      "id": "ASSET_127",
-      "paddedX": 240,
-      "paddedY": 431,
-      "paddedWidth": 16,
-      "paddedHeight": 16,
-      "name": "CRATE",
-      "label": "Crate",
-      "category": "storage",
+      "name": "RETRO_PROP_75",
+      "label": "Retro Prop 75",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
       "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_133_0_0",
+      "id": "ASSET_78",
       "paddedX": 240,
-      "paddedY": 528,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "erasedPixels": [
-        {
-          "x": 12,
-          "y": 0
-        },
-        {
-          "x": 11,
-          "y": 0
-        },
-        {
-          "x": 10,
-          "y": 0
-        },
-        {
-          "x": 9,
-          "y": 0
-        },
-        {
-          "x": 8,
-          "y": 0
-        },
-        {
-          "x": 7,
-          "y": 0
-        },
-        {
-          "x": 6,
-          "y": 1
-        },
-        {
-          "x": 5,
-          "y": 1
-        },
-        {
-          "x": 4,
-          "y": 1
-        },
-        {
-          "x": 3,
-          "y": 1
-        },
-        {
-          "x": 2,
-          "y": 1
-        },
-        {
-          "x": 1,
-          "y": 1
-        },
-        {
-          "x": 0,
-          "y": 1
-        },
-        {
-          "x": 3,
-          "y": 0
-        },
-        {
-          "x": 4,
-          "y": 0
-        },
-        {
-          "x": 5,
-          "y": 0
-        },
-        {
-          "x": 2,
-          "y": 0
-        },
-        {
-          "x": 1,
-          "y": 0
-        },
-        {
-          "x": 0,
-          "y": 0
-        },
-        {
-          "x": 6,
-          "y": 0
-        }
-      ],
-      "name": "WHITE_PLANT_1",
-      "label": "Small Plant",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_133_1_0",
-      "paddedX": 49,
-      "paddedY": 463,
+      "paddedY": 144,
       "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "WHITE_PLANT_BOTTOM",
-      "label": "White Plant - Bottom",
-      "category": "decor",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_76",
+      "label": "Retro Prop 76",
+      "category": "misc",
       "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
-      "discard": true,
-      "partOfGroup": true,
-      "groupId": "WHITE_PLANT",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 0,
-      "orientation": "front"
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_134",
-      "paddedX": 0,
-      "paddedY": 448,
+      "id": "ASSET_82",
+      "paddedX": 256,
+      "paddedY": 144,
       "paddedWidth": 32,
       "paddedHeight": 32,
-      "erasedPixels": [
-        {
-          "x": 4,
-          "y": 31
-        },
-        {
-          "x": 5,
-          "y": 31
-        },
-        {
-          "x": 6,
-          "y": 31
-        },
-        {
-          "x": 7,
-          "y": 31
-        },
-        {
-          "x": 8,
-          "y": 31
-        },
-        {
-          "x": 9,
-          "y": 31
-        },
-        {
-          "x": 10,
-          "y": 31
-        },
-        {
-          "x": 11,
-          "y": 31
-        },
-        {
-          "x": 12,
-          "y": 31
-        },
-        {
-          "x": 13,
-          "y": 31
-        },
-        {
-          "x": 14,
-          "y": 31
-        },
-        {
-          "x": 15,
-          "y": 31
-        },
-        {
-          "x": 16,
-          "y": 31
-        },
-        {
-          "x": 17,
-          "y": 31
-        },
-        {
-          "x": 18,
-          "y": 31
-        },
-        {
-          "x": 19,
-          "y": 31
-        },
-        {
-          "x": 20,
-          "y": 31
-        },
-        {
-          "x": 21,
-          "y": 31
-        },
-        {
-          "x": 22,
-          "y": 31
-        },
-        {
-          "x": 23,
-          "y": 31
-        },
-        {
-          "x": 24,
-          "y": 31
-        },
-        {
-          "x": 25,
-          "y": 31
-        },
-        {
-          "x": 26,
-          "y": 31
-        },
-        {
-          "x": 27,
-          "y": 31
-        }
-      ],
-      "name": "CHART_2",
-      "label": "Chart",
-      "category": "wall",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_77",
+      "label": "Retro Prop 77",
+      "category": "misc",
       "footprintW": 2,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 0,
-      "canPlaceOnWalls": true
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_138",
-      "paddedX": 130,
-      "paddedY": 447,
+      "id": "ASSET_79",
+      "paddedX": 288,
+      "paddedY": 144,
       "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "CRATES_SM",
-      "label": "Crates",
-      "category": "storage",
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_78",
+      "label": "Retro Prop 78",
+      "category": "misc",
       "footprintW": 1,
-      "footprintH": 2,
+      "footprintH": 1,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_135",
-      "paddedX": 143,
-      "paddedY": 447,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "CRATES_SM_2",
-      "label": "Crates",
-      "category": "storage",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_136",
-      "paddedX": 157,
-      "paddedY": 447,
+      "id": "ASSET_75",
+      "paddedX": 304,
+      "paddedY": 144,
       "paddedWidth": 32,
       "paddedHeight": 32,
-      "name": "CRATES",
-      "label": "Crates",
-      "category": "storage",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_79",
+      "label": "Retro Prop 79",
+      "category": "misc",
       "footprintW": 2,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "erasedPixels": [
-        {
-          "x": 1,
-          "y": 12
-        },
-        {
-          "x": 1,
-          "y": 13
-        },
-        {
-          "x": 1,
-          "y": 14
-        },
-        {
-          "x": 1,
-          "y": 15
-        },
-        {
-          "x": 1,
-          "y": 16
-        },
-        {
-          "x": 1,
-          "y": 17
-        },
-        {
-          "x": 1,
-          "y": 18
-        },
-        {
-          "x": 1,
-          "y": 19
-        },
-        {
-          "x": 1,
-          "y": 20
-        },
-        {
-          "x": 1,
-          "y": 21
-        },
-        {
-          "x": 1,
-          "y": 22
-        },
-        {
-          "x": 1,
-          "y": 23
-        },
-        {
-          "x": 1,
-          "y": 24
-        },
-        {
-          "x": 1,
-          "y": 25
-        },
-        {
-          "x": 1,
-          "y": 26
-        },
-        {
-          "x": 1,
-          "y": 27
-        },
-        {
-          "x": 1,
-          "y": 28
-        },
-        {
-          "x": 1,
-          "y": 29
-        },
-        {
-          "x": 1,
-          "y": 30
-        },
-        {
-          "x": 1,
-          "y": 31
-        },
-        {
-          "x": 0,
-          "y": 31
-        },
-        {
-          "x": 0,
-          "y": 30
-        },
-        {
-          "x": 0,
-          "y": 29
-        },
-        {
-          "x": 0,
-          "y": 28
-        },
-        {
-          "x": 0,
-          "y": 27
-        },
-        {
-          "x": 0,
-          "y": 26
-        },
-        {
-          "x": 0,
-          "y": 25
-        },
-        {
-          "x": 0,
-          "y": 24
-        },
-        {
-          "x": 0,
-          "y": 23
-        },
-        {
-          "x": 0,
-          "y": 22
-        },
-        {
-          "x": 0,
-          "y": 21
-        },
-        {
-          "x": 0,
-          "y": 20
-        },
-        {
-          "x": 0,
-          "y": 19
-        },
-        {
-          "x": 0,
-          "y": 18
-        },
-        {
-          "x": 0,
-          "y": 17
-        },
-        {
-          "x": 2,
-          "y": 12
-        },
-        {
-          "x": 1,
-          "y": 11
-        },
-        {
-          "x": 0,
-          "y": 11
-        },
-        {
-          "x": 0,
-          "y": 12
-        },
-        {
-          "x": 0,
-          "y": 13
-        },
-        {
-          "x": 0,
-          "y": 14
-        },
-        {
-          "x": 0,
-          "y": 15
-        },
-        {
-          "x": 0,
-          "y": 16
-        },
-        {
-          "x": 1,
-          "y": 10
-        },
-        {
-          "x": 1,
-          "y": 9
-        },
-        {
-          "x": 2,
-          "y": 10
-        },
-        {
-          "x": 2,
-          "y": 11
-        },
-        {
-          "x": 2,
-          "y": 13
-        },
-        {
-          "x": 2,
-          "y": 17
-        },
-        {
-          "x": 2,
-          "y": 16
-        },
-        {
-          "x": 2,
-          "y": 15
-        },
-        {
-          "x": 2,
-          "y": 14
-        },
-        {
-          "x": 2,
-          "y": 18
-        },
-        {
-          "x": 2,
-          "y": 19
-        },
-        {
-          "x": 2,
-          "y": 20
-        },
-        {
-          "x": 0,
-          "y": 10
-        }
-      ]
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_137",
-      "paddedX": 195,
-      "paddedY": 447,
+      "id": "ASSET_76",
+      "paddedX": 336,
+      "paddedY": 144,
       "paddedWidth": 32,
       "paddedHeight": 32,
-      "name": "CRATES_2",
-      "label": "Crates",
-      "category": "storage",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_80",
+      "label": "Retro Prop 80",
+      "category": "misc",
       "footprintW": 2,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_139",
+      "id": "ASSET_74",
+      "paddedX": 457,
+      "paddedY": 144,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_81",
+      "label": "Retro Prop 81",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_80",
+      "paddedX": 384,
+      "paddedY": 150,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_82",
+      "label": "Retro Prop 82",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_90",
+      "paddedX": 160,
+      "paddedY": 152,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_83",
+      "label": "Retro Prop 83",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_85",
       "paddedX": 224,
-      "paddedY": 447,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "CRATES_3",
-      "label": "Crates",
-      "category": "storage",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_132",
-      "paddedX": 176,
-      "paddedY": 560,
+      "paddedY": 153,
       "paddedWidth": 16,
       "paddedHeight": 32,
-      "name": "PLANT_1",
-      "label": "Small Plant",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": "PLANT",
-      "canPlaceOnSurfaces": true,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_140",
-      "paddedX": 224,
-      "paddedY": 560,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "WHITE_PLANT_2",
-      "label": "Plant",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": "WHITE_PLANT",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_141",
-      "paddedX": 240,
-      "paddedY": 560,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "WHITE_PLANT_3",
-      "label": "Plant",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": "WHITE_PLANT",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_142",
-      "paddedX": 192,
-      "paddedY": 560,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "PLANT_2",
-      "label": "Plant",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": "WHITE_PLANT",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_143",
-      "paddedX": 208,
-      "paddedY": 560,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "PLANT_3",
-      "label": "Plant",
-      "category": "decor",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": "WHITE_PLANT",
-      "canPlaceOnSurfaces": false,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_145",
-      "paddedX": 32,
-      "paddedY": 478,
-      "paddedWidth": 32,
-      "paddedHeight": 16,
-      "name": "MAT_SQUARE",
-      "label": "Square Pattern Mat",
-      "category": "decor",
-      "footprintW": 2,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": false,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_148",
-      "paddedX": 0,
-      "paddedY": 494,
-      "paddedWidth": 32,
-      "paddedHeight": 16,
-      "name": "MAT_CHESS_BOARD",
-      "label": "Chess Board Mat",
-      "category": "decor",
-      "footprintW": 2,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_150",
-      "paddedX": 64,
-      "paddedY": 494,
-      "paddedWidth": 32,
-      "paddedHeight": 16,
-      "name": "MAT_CIRCLES",
-      "label": "Circle Pattern Mat",
-      "category": "decor",
-      "footprintW": 2,
-      "footprintH": 1,
-      "isDesk": false,
-      "colorEditable": true,
-      "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": false
-    },
-    {
-      "id": "ASSET_151",
-      "paddedX": 108,
-      "paddedY": 487,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "MICROWAVE",
-      "label": "Microwave",
+      "erasedPixels": [],
+      "name": "RETRO_PROP_84",
+      "label": "Retro Prop 84",
       "category": "misc",
       "footprintW": 1,
       "footprintH": 2,
       "isDesk": false,
-      "colorEditable": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "canPlaceOnSurfaces": true,
-      "erasedPixels": [
-        {
-          "x": 0,
-          "y": 7
-        },
-        {
-          "x": 1,
-          "y": 7
-        },
-        {
-          "x": 2,
-          "y": 7
-        },
-        {
-          "x": 3,
-          "y": 7
-        },
-        {
-          "x": 4,
-          "y": 7
-        },
-        {
-          "x": 5,
-          "y": 7
-        },
-        {
-          "x": 6,
-          "y": 7
-        },
-        {
-          "x": 7,
-          "y": 7
-        },
-        {
-          "x": 8,
-          "y": 7
-        },
-        {
-          "x": 9,
-          "y": 7
-        },
-        {
-          "x": 10,
-          "y": 7
-        },
-        {
-          "x": 11,
-          "y": 7
-        },
-        {
-          "x": 12,
-          "y": 7
-        },
-        {
-          "x": 13,
-          "y": 7
-        },
-        {
-          "x": 14,
-          "y": 7
-        },
-        {
-          "x": 15,
-          "y": 7
-        },
-        {
-          "x": 1,
-          "y": 6
-        },
-        {
-          "x": 1,
-          "y": 5
-        },
-        {
-          "x": 1,
-          "y": 4
-        },
-        {
-          "x": 1,
-          "y": 3
-        },
-        {
-          "x": 1,
-          "y": 2
-        },
-        {
-          "x": 1,
-          "y": 1
-        },
-        {
-          "x": 1,
-          "y": 0
-        },
-        {
-          "x": 1,
-          "y": 8
-        },
-        {
-          "x": 0,
-          "y": 6
-        },
-        {
-          "x": 0,
-          "y": 5
-        },
-        {
-          "x": 0,
-          "y": 4
-        },
-        {
-          "x": 0,
-          "y": 3
-        },
-        {
-          "x": 0,
-          "y": 2
-        },
-        {
-          "x": 0,
-          "y": 1
-        },
-        {
-          "x": 0,
-          "y": 0
-        },
-        {
-          "x": 2,
-          "y": 6
-        },
-        {
-          "x": 5,
-          "y": 6
-        },
-        {
-          "x": 6,
-          "y": 6
-        },
-        {
-          "x": 7,
-          "y": 6
-        },
-        {
-          "x": 8,
-          "y": 6
-        },
-        {
-          "x": 9,
-          "y": 6
-        },
-        {
-          "x": 10,
-          "y": 6
-        },
-        {
-          "x": 11,
-          "y": 6
-        },
-        {
-          "x": 12,
-          "y": 6
-        },
-        {
-          "x": 13,
-          "y": 6
-        },
-        {
-          "x": 14,
-          "y": 6
-        },
-        {
-          "x": 15,
-          "y": 6
-        },
-        {
-          "x": 4,
-          "y": 6
-        },
-        {
-          "x": 3,
-          "y": 5
-        },
-        {
-          "x": 2,
-          "y": 5
-        },
-        {
-          "x": 3,
-          "y": 8
-        },
-        {
-          "x": 3,
-          "y": 9
-        },
-        {
-          "x": 4,
-          "y": 9
-        },
-        {
-          "x": 4,
-          "y": 8
-        },
-        {
-          "x": 3,
-          "y": 6
-        },
-        {
-          "x": 4,
-          "y": 5
-        },
-        {
-          "x": 5,
-          "y": 5
-        },
-        {
-          "x": 6,
-          "y": 5
-        },
-        {
-          "x": 7,
-          "y": 5
-        },
-        {
-          "x": 8,
-          "y": 5
-        },
-        {
-          "x": 9,
-          "y": 5
-        },
-        {
-          "x": 10,
-          "y": 5
-        },
-        {
-          "x": 11,
-          "y": 5
-        },
-        {
-          "x": 11,
-          "y": 4
-        },
-        {
-          "x": 10,
-          "y": 4
-        },
-        {
-          "x": 9,
-          "y": 4
-        },
-        {
-          "x": 8,
-          "y": 4
-        },
-        {
-          "x": 7,
-          "y": 4
-        },
-        {
-          "x": 6,
-          "y": 4
-        },
-        {
-          "x": 5,
-          "y": 4
-        },
-        {
-          "x": 12,
-          "y": 5
-        },
-        {
-          "x": 13,
-          "y": 5
-        },
-        {
-          "x": 14,
-          "y": 5
-        },
-        {
-          "x": 15,
-          "y": 5
-        },
-        {
-          "x": 2,
-          "y": 4
-        },
-        {
-          "x": 2,
-          "y": 3
-        },
-        {
-          "x": 2,
-          "y": 2
-        },
-        {
-          "x": 3,
-          "y": 3
-        },
-        {
-          "x": 3,
-          "y": 4
-        },
-        {
-          "x": 3,
-          "y": 2
-        },
-        {
-          "x": 4,
-          "y": 2
-        },
-        {
-          "x": 5,
-          "y": 3
-        },
-        {
-          "x": 6,
-          "y": 3
-        },
-        {
-          "x": 4,
-          "y": 3
-        },
-        {
-          "x": 2,
-          "y": 1
-        },
-        {
-          "x": 3,
-          "y": 1
-        },
-        {
-          "x": 4,
-          "y": 1
-        },
-        {
-          "x": 5,
-          "y": 2
-        },
-        {
-          "x": 2,
-          "y": 0
-        },
-        {
-          "x": 3,
-          "y": 0
-        },
-        {
-          "x": 4,
-          "y": 0
-        },
-        {
-          "x": 5,
-          "y": 1
-        },
-        {
-          "x": 6,
-          "y": 1
-        },
-        {
-          "x": 6,
-          "y": 2
-        },
-        {
-          "x": 4,
-          "y": 4
-        },
-        {
-          "x": 7,
-          "y": 1
-        },
-        {
-          "x": 8,
-          "y": 1
-        },
-        {
-          "x": 9,
-          "y": 1
-        },
-        {
-          "x": 9,
-          "y": 2
-        },
-        {
-          "x": 8,
-          "y": 3
-        },
-        {
-          "x": 10,
-          "y": 1
-        },
-        {
-          "x": 11,
-          "y": 1
-        },
-        {
-          "x": 12,
-          "y": 1
-        },
-        {
-          "x": 11,
-          "y": 2
-        },
-        {
-          "x": 10,
-          "y": 3
-        },
-        {
-          "x": 9,
-          "y": 3
-        },
-        {
-          "x": 9,
-          "y": 0
-        },
-        {
-          "x": 8,
-          "y": 0
-        },
-        {
-          "x": 7,
-          "y": 0
-        },
-        {
-          "x": 6,
-          "y": 0
-        },
-        {
-          "x": 5,
-          "y": 0
-        },
-        {
-          "x": 13,
-          "y": 0
-        },
-        {
-          "x": 14,
-          "y": 0
-        },
-        {
-          "x": 10,
-          "y": 2
-        },
-        {
-          "x": 8,
-          "y": 2
-        },
-        {
-          "x": 12,
-          "y": 0
-        },
-        {
-          "x": 11,
-          "y": 0
-        },
-        {
-          "x": 10,
-          "y": 0
-        },
-        {
-          "x": 13,
-          "y": 1
-        },
-        {
-          "x": 14,
-          "y": 1
-        },
-        {
-          "x": 15,
-          "y": 1
-        },
-        {
-          "x": 7,
-          "y": 3
-        },
-        {
-          "x": 7,
-          "y": 2
-        },
-        {
-          "x": 11,
-          "y": 3
-        },
-        {
-          "x": 12,
-          "y": 3
-        },
-        {
-          "x": 13,
-          "y": 3
-        },
-        {
-          "x": 14,
-          "y": 2
-        },
-        {
-          "x": 15,
-          "y": 2
-        },
-        {
-          "x": 15,
-          "y": 3
-        },
-        {
-          "x": 15,
-          "y": 4
-        },
-        {
-          "x": 14,
-          "y": 3
-        },
-        {
-          "x": 13,
-          "y": 4
-        },
-        {
-          "x": 14,
-          "y": 4
-        },
-        {
-          "x": 15,
-          "y": 0
-        },
-        {
-          "x": 12,
-          "y": 4
-        },
-        {
-          "x": 12,
-          "y": 2
-        },
-        {
-          "x": 13,
-          "y": 2
-        }
-      ],
-      "backgroundTiles": 1,
-      "canPlaceOnWalls": false
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_NEW_106",
-      "paddedX": 16,
-      "paddedY": -9,
-      "paddedWidth": 48,
+      "id": "ASSET_83",
+      "paddedX": 368,
+      "paddedY": 158,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_85",
+      "label": "Retro Prop 85",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_84",
+      "paddedX": 128,
+      "paddedY": 160,
+      "paddedWidth": 32,
       "paddedHeight": 32,
-      "name": "TABLE_WOOD",
-      "label": "Wooden Table",
-      "category": "desks",
-      "footprintW": 3,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_86",
+      "label": "Retro Prop 86",
+      "category": "misc",
+      "footprintW": 2,
       "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": true,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
       "discard": false,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "backgroundTiles": 1
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_NEW_107",
+      "id": "ASSET_86",
+      "paddedX": 288,
+      "paddedY": 160,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_87",
+      "label": "Retro Prop 87",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_87",
+      "paddedX": 192,
+      "paddedY": 161,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_88",
+      "label": "Retro Prop 88",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_88",
+      "paddedX": 208,
+      "paddedY": 161,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_89",
+      "label": "Retro Prop 89",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_89",
+      "paddedX": 240,
+      "paddedY": 162,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_90",
+      "label": "Retro Prop 90",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_98",
+      "paddedX": 61,
+      "paddedY": 170,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_91",
+      "label": "Retro Prop 91",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_101",
+      "paddedX": 60,
+      "paddedY": 172,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_92",
+      "label": "Retro Prop 92",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_99",
+      "paddedX": 80,
+      "paddedY": 172,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_93",
+      "label": "Retro Prop 93",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_100",
+      "paddedX": 96,
+      "paddedY": 172,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_94",
+      "label": "Retro Prop 94",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_95",
+      "paddedX": 384,
+      "paddedY": 174,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_95",
+      "label": "Retro Prop 95",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_96",
+      "paddedX": 416,
+      "paddedY": 174,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_96",
+      "label": "Retro Prop 96",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_93",
+      "paddedX": 65,
+      "paddedY": 176,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_97",
+      "label": "Retro Prop 97",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_97",
+      "paddedX": 256,
+      "paddedY": 176,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_98",
+      "label": "Retro Prop 98",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_94",
+      "paddedX": 288,
+      "paddedY": 176,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_99",
+      "label": "Retro Prop 99",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_91",
+      "paddedX": 304,
+      "paddedY": 176,
+      "paddedWidth": 64,
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_100",
+      "label": "Retro Prop 100",
+      "category": "misc",
+      "footprintW": 4,
+      "footprintH": 3,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_92",
+      "paddedX": 368,
+      "paddedY": 176,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_101",
+      "label": "Retro Prop 101",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_102",
+      "paddedX": 8,
+      "paddedY": 184,
+      "paddedWidth": 64,
+      "paddedHeight": 64,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_102",
+      "label": "Retro Prop 102",
+      "category": "misc",
+      "footprintW": 4,
+      "footprintH": 4,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_106",
+      "paddedX": 160,
+      "paddedY": 184,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_103",
+      "label": "Retro Prop 103",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_104",
+      "paddedX": 224,
+      "paddedY": 190,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_104",
+      "label": "Retro Prop 104",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_107",
+      "paddedX": 128,
+      "paddedY": 192,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_105",
+      "label": "Retro Prop 105",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_105",
+      "paddedX": 144,
+      "paddedY": 192,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_106",
+      "label": "Retro Prop 106",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_103",
+      "paddedX": 192,
+      "paddedY": 192,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_107",
+      "label": "Retro Prop 107",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_108",
+      "paddedX": 288,
+      "paddedY": 192,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_108",
+      "label": "Retro Prop 108",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_116",
+      "paddedX": 496,
+      "paddedY": 201,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_109",
+      "label": "Retro Prop 109",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_113",
+      "paddedX": 224,
+      "paddedY": 206,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_110",
+      "label": "Retro Prop 110",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_109",
+      "paddedX": 80,
+      "paddedY": 207,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_111",
+      "label": "Retro Prop 111",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_110",
+      "paddedX": 96,
+      "paddedY": 207,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_112",
+      "label": "Retro Prop 112",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_111",
+      "paddedX": 384,
+      "paddedY": 207,
+      "paddedWidth": 64,
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_113",
+      "label": "Retro Prop 113",
+      "category": "misc",
+      "footprintW": 4,
+      "footprintH": 3,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_118",
+      "paddedX": 256,
+      "paddedY": 208,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_114",
+      "label": "Retro Prop 114",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_119",
+      "paddedX": 272,
+      "paddedY": 208,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_115",
+      "label": "Retro Prop 115",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_112",
+      "paddedX": 288,
+      "paddedY": 208,
+      "paddedWidth": 96,
+      "paddedHeight": 48,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_116",
+      "label": "Retro Prop 116",
+      "category": "misc",
+      "footprintW": 6,
+      "footprintH": 3,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_114",
+      "paddedX": 304,
+      "paddedY": 208,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_117",
+      "label": "Retro Prop 117",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_115",
+      "paddedX": 480,
+      "paddedY": 213,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_118",
+      "label": "Retro Prop 118",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_117",
+      "paddedX": 448,
+      "paddedY": 214,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_119",
+      "label": "Retro Prop 119",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_124",
+      "paddedX": 224,
+      "paddedY": 223,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_120",
+      "label": "Retro Prop 120",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_123",
+      "paddedX": 240,
+      "paddedY": 223,
+      "paddedWidth": 16,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_121",
+      "label": "Retro Prop 121",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_120",
+      "paddedX": 384,
+      "paddedY": 223,
+      "paddedWidth": 32,
+      "paddedHeight": 32,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_122",
+      "label": "Retro Prop 122",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 2,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_121",
+      "paddedX": 80,
+      "paddedY": 224,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_123",
+      "label": "Retro Prop 123",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_122",
+      "paddedX": 96,
+      "paddedY": 224,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_124",
+      "label": "Retro Prop 124",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_125",
+      "paddedX": 235,
+      "paddedY": 224,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_125",
+      "label": "Retro Prop 125",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_128",
+      "paddedX": 234,
+      "paddedY": 226,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_126",
+      "label": "Retro Prop 126",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_134",
+      "paddedX": 24,
+      "paddedY": 234,
+      "paddedWidth": 32,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_127",
+      "label": "Retro Prop 127",
+      "category": "misc",
+      "footprintW": 2,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_131",
+      "paddedX": 80,
+      "paddedY": 239,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_128",
+      "label": "Retro Prop 128",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_132",
+      "paddedX": 96,
+      "paddedY": 239,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_129",
+      "label": "Retro Prop 129",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_129",
+      "paddedX": 208,
+      "paddedY": 239,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_130",
+      "label": "Retro Prop 130",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_126",
+      "paddedX": 0,
+      "paddedY": 240,
+      "paddedWidth": 16,
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_131",
+      "label": "Retro Prop 131",
+      "category": "misc",
+      "footprintW": 1,
+      "footprintH": 1,
+      "isDesk": false,
+      "canPlaceOnWalls": false,
+      "discard": false,
+      "canPlaceOnSurfaces": true
+    },
+    {
+      "id": "ASSET_127",
       "paddedX": 64,
-      "paddedY": -10,
-      "paddedWidth": 48,
-      "paddedHeight": 32,
-      "name": "TABLE_PLAIN_WOOD",
-      "label": "Plain Wooden Table",
-      "category": "desks",
-      "footprintW": 3,
-      "footprintH": 2,
-      "isDesk": true,
-      "colorEditable": true,
-      "discard": false,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null,
-      "backgroundTiles": 1
-    },
-    {
-      "id": "ASSET_NEW_108",
-      "paddedX": 16,
-      "paddedY": 608,
-      "paddedWidth": 32,
+      "paddedY": 240,
+      "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "CHAIR_CUSHIONED_LG_FRONT",
-      "label": "Large Cushioned Chair",
-      "category": "chairs",
-      "footprintW": 2,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_132",
+      "label": "Retro Prop 132",
+      "category": "misc",
+      "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
       "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 0,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": true,
-      "groupId": "CUSHIONED_CHAIR_LG",
-      "orientation": "front"
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_NEW_109",
-      "paddedX": 48,
-      "paddedY": 608,
-      "paddedWidth": 32,
+      "id": "ASSET_133",
+      "paddedX": 256,
+      "paddedY": 240,
+      "paddedWidth": 16,
       "paddedHeight": 16,
-      "name": "CHAIR_CUSHIONED_LG_BACK",
-      "label": "Large Cushioned Chair",
-      "category": "chairs",
-      "footprintW": 2,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_133",
+      "label": "Retro Prop 133",
+      "category": "misc",
+      "footprintW": 1,
       "footprintH": 1,
       "isDesk": false,
       "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 0,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": true,
-      "groupId": "CUSHIONED_CHAIR_LG",
-      "orientation": "back"
+      "canPlaceOnSurfaces": true
     },
     {
-      "id": "ASSET_NEW_110",
-      "paddedX": 16,
-      "paddedY": 624,
+      "id": "ASSET_130",
+      "paddedX": 272,
+      "paddedY": 240,
       "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "CHAIR_CUSHIONED_LG_RIGHT",
-      "label": "Large Cushioned Chair",
-      "category": "chairs",
+      "paddedHeight": 16,
+      "erasedPixels": [],
+      "name": "RETRO_PROP_134",
+      "label": "Retro Prop 134",
+      "category": "misc",
       "footprintW": 1,
-      "footprintH": 2,
+      "footprintH": 1,
       "isDesk": false,
       "canPlaceOnWalls": false,
       "discard": false,
-      "backgroundTiles": 0,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": true,
-      "groupId": "CUSHIONED_CHAIR_LG",
-      "orientation": "right"
-    },
-    {
-      "id": "ASSET_NEW_111",
-      "paddedX": 32,
-      "paddedY": 624,
-      "paddedWidth": 16,
-      "paddedHeight": 32,
-      "name": "CHAIR_CUSHIONED_LG_LEFT",
-      "label": "Large Cushioned Chair",
-      "category": "chairs",
-      "footprintW": 1,
-      "footprintH": 2,
-      "isDesk": false,
-      "canPlaceOnWalls": false,
-      "discard": false,
-      "backgroundTiles": 0,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": true,
-      "groupId": "CUSHIONED_CHAIR_LG",
-      "orientation": "left"
-    },
-    {
-      "id": "ASSET_NEW_112",
-      "paddedX": 48,
-      "paddedY": 624,
-      "paddedWidth": 32,
-      "paddedHeight": 32,
-      "name": "COFFEE_TABLE_LG",
-      "label": "Large Coffee Table",
-      "category": "desks",
-      "footprintW": 2,
-      "footprintH": 2,
-      "isDesk": true,
-      "canPlaceOnWalls": false,
-      "discard": false,
-      "backgroundTiles": 1,
-      "canPlaceOnSurfaces": false,
-      "partOfGroup": false,
-      "groupId": null
+      "canPlaceOnSurfaces": true
     }
   ]
 }

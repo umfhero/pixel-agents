@@ -1,0 +1,6 @@
+src/App.tsx(210,30): error TS2551: Property 'handleZoomChange' does not exist on type 'EditorActions'. Did you mean 'handleToolChange'?
+src/App.tsx(214,61): error TS2551: Property 'handleZoomChange' does not exist on type 'EditorActions'. Did you mean 'handleToolChange'?
+src/components/LayoutPresetsPanel.tsx(3,10): error TS1484: 'OfficeLayout' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/hooks/useEditorActions.ts(524,5): error TS2561: Object literal may only specify known properties, but 'handleZoomChange' does not exist in type 'EditorActions'. Did you mean to write 'handleToolChange'?
+src/office/layout/layoutPresets.ts(1,20): error TS2300: Duplicate identifier 'FurnitureType'.
+src/office/layout/layoutPresets.ts(4,10): error TS2300: Duplicate identifier 'FurnitureType'.

@@ -17,6 +17,7 @@ import {
 export interface LoadedAssetData {
   catalog: Array<{
     id: string
+    name: string
     label: string
     category: string
     width: number
@@ -30,6 +31,8 @@ export interface LoadedAssetData {
     canPlaceOnSurfaces?: boolean
     backgroundTiles?: number
     canPlaceOnWalls?: boolean
+    rowOffset?: number
+    yOffset?: number
   }>
   sprites: Record<string, SpriteData>
 }
@@ -48,10 +51,10 @@ export const FURNITURE_CATALOG: CatalogEntryWithCategory[] = [
   { type: FurnitureType.COOLER, label: 'Cooler', footprintW: 1, footprintH: 1, sprite: COOLER_SPRITE, isDesk: false, category: 'misc' },
   { type: FurnitureType.WHITEBOARD, label: 'Whiteboard', footprintW: 2, footprintH: 1, sprite: WHITEBOARD_SPRITE, isDesk: false, category: 'decor' },
   { type: FurnitureType.CHAIR, label: 'Chair', footprintW: 1, footprintH: 1, sprite: CHAIR_SPRITE, isDesk: false, category: 'chairs' },
-  { type: FurnitureType.PC, label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_FRONT_SPRITE, isDesk: false, category: 'electronics', orientation: 'front', canPlaceOnSurfaces: true },
-  { type: 'pc_right', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_RIGHT_SPRITE, isDesk: false, category: 'electronics', orientation: 'right', canPlaceOnSurfaces: true },
-  { type: 'pc_back', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_BACK_SPRITE, isDesk: false, category: 'electronics', orientation: 'back', canPlaceOnSurfaces: true },
-  { type: 'pc_left', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_LEFT_SPRITE, isDesk: false, category: 'electronics', orientation: 'left', canPlaceOnSurfaces: true },
+  { type: FurnitureType.PC, label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_FRONT_SPRITE, isDesk: false, category: 'electronics', orientation: 'front', canPlaceOnSurfaces: true, yOffset: -4 },
+  { type: 'pc_right', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_RIGHT_SPRITE, isDesk: false, category: 'electronics', orientation: 'right', canPlaceOnSurfaces: true, yOffset: -4 },
+  { type: 'pc_back', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_BACK_SPRITE, isDesk: false, category: 'electronics', orientation: 'back', canPlaceOnSurfaces: true, yOffset: -4 },
+  { type: 'pc_left', label: 'PC', footprintW: 1, footprintH: 1, sprite: PC_LEFT_SPRITE, isDesk: false, category: 'electronics', orientation: 'left', canPlaceOnSurfaces: true, yOffset: -4 },
   { type: FurnitureType.LAMP, label: 'Lamp', footprintW: 1, footprintH: 1, sprite: LAMP_SPRITE, isDesk: false, category: 'decor' },
 
 ]
@@ -108,28 +111,56 @@ export function buildDynamicCatalog(assets: LoadedAssetData): boolean {
       console.warn(`No sprite data for asset ${asset.id}`)
       return null
     }
-    return {
+
+    // --- Requested Fixes: Wall Decor Overrides ---
+    // Retro Props 98, 11, 88, 89, 90 are wall decor and should be placed 1 tile higher.
+    const wallDecorIds = ['RETRO_PROP_98', 'RETRO_PROP_11', 'RETRO_PROP_88', 'RETRO_PROP_89', 'RETRO_PROP_90']
+    // Actually the asset.name or asset.label might be more reliable if IDs are ASSET_N
+    const isWallDecor = wallDecorIds.includes(asset.name)
+
+    const entry: CatalogEntryWithCategory = {
       type: asset.id,
       label: asset.label,
       footprintW: asset.footprintW,
       footprintH: asset.footprintH,
       sprite,
       isDesk: asset.isDesk,
-      category: asset.category as FurnitureCategory,
+      category: isWallDecor ? 'wall' : (asset.category as FurnitureCategory),
       ...(asset.orientation ? { orientation: asset.orientation } : {}),
       ...(asset.canPlaceOnSurfaces ? { canPlaceOnSurfaces: true } : {}),
       ...(asset.backgroundTiles ? { backgroundTiles: asset.backgroundTiles } : {}),
-      ...(asset.canPlaceOnWalls ? { canPlaceOnWalls: true } : {}),
+      ...(asset.canPlaceOnWalls || isWallDecor ? { canPlaceOnWalls: true } : {}),
+      ...(isWallDecor ? { rowOffset: -1 } : {}),
+      ...(asset.rowOffset ? { rowOffset: asset.rowOffset } : {}),
+      // Apply -4px yOffset to all surface items (desk items) so they align better
+      yOffset: asset.yOffset ?? (asset.canPlaceOnSurfaces ? -4 : 0),
     }
+    return entry
   }).filter((e): e is CatalogEntryWithCategory => e !== null)
 
   if (allEntries.length === 0) return false
 
+  // Merge in the hardcoded built-in furniture entries so they remain available
+  // even when dynamic assets are loaded (presets reference FurnitureType.DESK, etc.)
+  for (const builtIn of FURNITURE_CATALOG) {
+    if (!allEntries.some((e) => e.type === builtIn.type)) {
+      allEntries.push(builtIn)
+    }
+  }
+
   // Build rotation groups from groupId + orientation metadata
+  // Preserve the hardcoded PC rotation group
+  const savedPcGroup = rotationGroups.get(FurnitureType.PC)
   rotationGroups.clear()
   stateGroups.clear()
   offToOn.clear()
   onToOff.clear()
+  // Re-register the PC rotation group
+  if (savedPcGroup) {
+    for (const id of Object.values(savedPcGroup.members)) {
+      rotationGroups.set(id, savedPcGroup)
+    }
+  }
 
   // Phase 1: Collect orientations per group (only "off" or stateless variants for rotation)
   const groupMap = new Map<string, Map<string, string>>() // groupId → (orientation → assetId)

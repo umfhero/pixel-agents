@@ -42,6 +42,8 @@ export interface FurnitureAsset {
   backgroundTiles?: number
   orientation?: string
   state?: string
+  rowOffset?: number
+  yOffset?: number
 }
 
 export interface LoadedAssets {
