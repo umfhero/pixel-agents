@@ -3,7 +3,7 @@ import { SettingsModal } from './SettingsModal.js'
 
 interface BottomToolbarProps {
   isEditMode: boolean
-  onOpenClaude: () => void
+  onAddAgent: () => void
   onToggleEditMode: () => void
   isDebugMode: boolean
   onToggleDebugMode: () => void
@@ -43,7 +43,7 @@ const btnActive: React.CSSProperties = {
 
 export function BottomToolbar({
   isEditMode,
-  onOpenClaude,
+  onAddAgent,
   onToggleEditMode,
   isDebugMode,
   onToggleDebugMode,
@@ -54,7 +54,7 @@ export function BottomToolbar({
   return (
     <div style={panelStyle}>
       <button
-        onClick={onOpenClaude}
+        onClick={onAddAgent}
         onMouseEnter={() => setHovered('agent')}
         onMouseLeave={() => setHovered(null)}
         style={{
@@ -78,9 +78,9 @@ export function BottomToolbar({
           isEditMode
             ? { ...btnActive }
             : {
-                ...btnBase,
-                background: hovered === 'edit' ? 'var(--pixel-btn-hover-bg)' : btnBase.background,
-              }
+              ...btnBase,
+              background: hovered === 'edit' ? 'var(--pixel-btn-hover-bg)' : btnBase.background,
+            }
         }
         title="Edit office layout"
       >
@@ -95,9 +95,9 @@ export function BottomToolbar({
             isSettingsOpen
               ? { ...btnActive }
               : {
-                  ...btnBase,
-                  background: hovered === 'settings' ? 'var(--pixel-btn-hover-bg)' : btnBase.background,
-                }
+                ...btnBase,
+                background: hovered === 'settings' ? 'var(--pixel-btn-hover-bg)' : btnBase.background,
+              }
           }
           title="Settings"
         >

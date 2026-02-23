@@ -8,7 +8,7 @@ import { setFloorSprites } from '../office/floorTiles.js'
 import { setWallSprites } from '../office/wallTiles.js'
 import { setCharacterTemplates } from '../office/sprites/spriteData.js'
 import { vscode } from '../vscodeApi.js'
-import { playDoneSound, setSoundEnabled } from '../notificationSound.js'
+import { setSoundEnabled } from '../notificationSound.js'
 
 export interface SubagentCharacter {
   id: number
@@ -213,20 +213,25 @@ export function useExtensionMessages(
       } else if (msg.type === 'agentStatus') {
         const id = msg.id as number
         const status = msg.status as string
+
+        const isActive = status !== 'idle'
+        os.setAgentActive(id, isActive)
+
+        let toolName: string | null = null
+        if (status === 'thinking') toolName = 'Read'
+        else if (status === 'terminal') toolName = 'Terminal'
+        else if (status === 'typing') toolName = 'Code'
+        os.setAgentTool(id, toolName)
+
         setAgentStatuses((prev) => {
-          if (status === 'active') {
+          if (!isActive) {
             if (!(id in prev)) return prev
             const next = { ...prev }
             delete next[id]
             return next
           }
-          return { ...prev, [id]: status }
+          return { ...prev, [id]: status } // stores 'typing', 'thinking', 'terminal'
         })
-        os.setAgentActive(id, status === 'active')
-        if (status === 'waiting') {
-          os.showWaitingBubble(id)
-          playDoneSound()
-        }
       } else if (msg.type === 'agentToolPermission') {
         const id = msg.id as number
         setAgentTools((prev) => {

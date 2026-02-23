@@ -19,7 +19,7 @@ export interface EditorActions {
   panRef: React.MutableRefObject<{ x: number; y: number }>
   saveTimerRef: React.MutableRefObject<ReturnType<typeof setTimeout> | null>
   setLastSavedLayout: (layout: OfficeLayout) => void
-  handleOpenClaude: () => void
+  handleAddAgent: () => void
   handleToggleEditMode: () => void
   handleToolChange: (tool: EditToolType) => void
   handleTileTypeChange: (type: TileTypeVal) => void
@@ -66,7 +66,6 @@ export function useEditorActions(
     }, LAYOUT_SAVE_DEBOUNCE_MS)
   }, [])
 
-  // Apply a layout edit: push undo, clear redo, rebuild state, save, mark dirty
   const applyEdit = useCallback((newLayout: OfficeLayout) => {
     const os = getOfficeState()
     editorState.pushUndo(os.getLayout())
@@ -78,8 +77,8 @@ export function useEditorActions(
     setEditorTick((n) => n + 1)
   }, [getOfficeState, editorState, saveLayout])
 
-  const handleOpenClaude = useCallback(() => {
-    vscode.postMessage({ type: 'openClaude' })
+  const handleAddAgent = useCallback(() => {
+    vscode.postMessage({ type: 'addAgent' })
   }, [])
 
   const handleToggleEditMode = useCallback(() => {
@@ -503,7 +502,7 @@ export function useEditorActions(
     panRef,
     saveTimerRef,
     setLastSavedLayout,
-    handleOpenClaude,
+    handleAddAgent,
     handleToggleEditMode,
     handleToolChange,
     handleTileTypeChange,

@@ -7,12 +7,13 @@
 }
 
 :root {
-  --pixel-bg: #1e1e2e;
-  --pixel-border: #4a4a6a;
-  --pixel-border-light: #6a6a8a;
-  --pixel-accent: #5a8cff;
-  --pixel-green: #5ac88c;
-  --pixel-shadow: 2px 2px 0px #0a0a14;
+  /* Consume VS Code native Theme Variables */
+  --pixel-bg: var(--vscode-editor-background, #1e1e2e);
+  --pixel-border: var(--vscode-sideBar-border, #4a4a6a);
+  --pixel-border-light: var(--vscode-widget-border, #6a6a8a);
+  --pixel-accent: var(--vscode-activityBar-activeBorder, #5a8cff);
+  --pixel-green: var(--vscode-terminal-ansiGreen, #5ac88c);
+  --pixel-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
 
   /* Button base */
   --pixel-text: rgba(255, 255, 255, 0.8);

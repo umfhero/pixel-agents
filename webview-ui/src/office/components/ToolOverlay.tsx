@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import type { ToolActivity } from '../types.js'
+
 import type { OfficeState } from '../engine/officeState.js'
 import type { SubagentCharacter } from '../../hooks/useExtensionMessages.js'
 import { TILE_SIZE, CharacterState } from '../types.js'
@@ -8,7 +8,7 @@ import { TOOL_OVERLAY_VERTICAL_OFFSET, CHARACTER_SITTING_OFFSET_PX } from '../..
 interface ToolOverlayProps {
   officeState: OfficeState
   agents: number[]
-  agentTools: Record<number, ToolActivity[]>
+  agentStatuses: Record<number, string>
   subagentCharacters: SubagentCharacter[]
   containerRef: React.RefObject<HTMLDivElement | null>
   zoom: number
@@ -16,34 +16,24 @@ interface ToolOverlayProps {
   onCloseAgent: (id: number) => void
 }
 
-/** Derive a short human-readable activity string from tools/status */
+/** Derive a short human-readable activity string from status */
 function getActivityText(
   agentId: number,
-  agentTools: Record<number, ToolActivity[]>,
+  agentStatuses: Record<number, string>,
   isActive: boolean,
 ): string {
-  const tools = agentTools[agentId]
-  if (tools && tools.length > 0) {
-    // Find the latest non-done tool
-    const activeTool = [...tools].reverse().find((t) => !t.done)
-    if (activeTool) {
-      if (activeTool.permissionWait) return 'Needs approval'
-      return activeTool.status
-    }
-    // All tools done but agent still active (mid-turn) — keep showing last tool status
-    if (isActive) {
-      const lastTool = tools[tools.length - 1]
-      if (lastTool) return lastTool.status
-    }
-  }
-
-  return 'Idle'
+  if (!isActive) return 'Idle'
+  const status = agentStatuses[agentId]
+  if (status === 'typing') return 'Typing...'
+  if (status === 'thinking') return 'Reading...'
+  if (status === 'terminal') return 'Terminal...'
+  return 'Active'
 }
 
 export function ToolOverlay({
   officeState,
   agents,
-  agentTools,
+  agentStatuses,
   subagentCharacters,
   containerRef,
   zoom,
@@ -108,19 +98,16 @@ export function ToolOverlay({
             activityText = sub ? sub.label : 'Subtask'
           }
         } else {
-          activityText = getActivityText(id, agentTools, ch.isActive)
+          activityText = getActivityText(id, agentStatuses, ch.isActive)
         }
 
-        // Determine dot color
-        const tools = agentTools[id]
-        const hasPermission = subHasPermission || tools?.some((t) => t.permissionWait && !t.done)
-        const hasActiveTools = tools?.some((t) => !t.done)
+        const hasPermission = subHasPermission
         const isActive = ch.isActive
 
         let dotColor: string | null = null
         if (hasPermission) {
           dotColor = 'var(--pixel-status-permission)'
-        } else if (isActive && hasActiveTools) {
+        } else if (isActive) {
           dotColor = 'var(--pixel-status-active)'
         }
 
